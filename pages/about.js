@@ -13,9 +13,9 @@ export default function About() {
       </Head>
       <div className={styles.row}>
         <Image
-          src="/images/profile2.jpg" // Route of the image file
-          height={420} // Desired size with correct aspect ratio
-          width={290} // Desired size with correct aspect ratio
+          src="/images/profile.jpg" // Route of the image file
+          height={321} // Desired size with correct aspect ratio
+          width={220} // Desired size with correct aspect ratio
           alt="profile"
         />
         <div className={utilstyles.width550}>

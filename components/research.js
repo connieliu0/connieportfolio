@@ -5,9 +5,11 @@ export default function Research(props) {
     <div className={styles.research}>
       <div className={styles.width425}>
         <a href={props.link} target="_blank">
-          <h3>{props.name}</h3>{" "}
+          <h4>{props.name}</h4>{" "}
         </a>
-        <p>{props.subtitle}</p>
+        <em>
+          <p>{props.subtitle}</p>
+        </em>
       </div>
     </div>
   );

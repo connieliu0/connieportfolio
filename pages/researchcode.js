@@ -14,7 +14,7 @@ export default function Researchcode() {
       </Head>
       <h1>
         Beyond design, I love investigating new futures with research and
-        building through code!
+        building through code ⚘
       </h1>
       <Section name="RESEARCH WORK" />
       <div className={utilstyles.row}>
@@ -42,7 +42,7 @@ export default function Researchcode() {
           link="https://drive.google.com/file/d/11kyZiwPxJoDplAi2A3KzzhicOBl1cZw3/view?usp=sharing"
         />
       </div>
-      <h2>
+      <h3>
         {" "}
         <em>
           ✎ More writing on my{" "}
@@ -50,29 +50,29 @@ export default function Researchcode() {
             Substack
           </a>
         </em>
-      </h2>
+      </h3>
       <Section name="CODE PROJECTS" />
       <div className={utilstyles.galleryrow}>
         <SmallCard
           pic="/images/viz.png"
           title="HATE CRIMES DATAVIZ"
           type="Spring 2021, d3.js"
-          link="https://connie-liu.me/info3300_project2/"
+          link="https://old.connie-liu.me/info3300_project2/"
         />
         <SmallCard
           pic="/images/gsoc.png"
           title="GOOGLE SUMMER OF CODE"
           type="Summer 2020, React.js"
-          link="https://connie-liu.me/p5.js-showcase/#/"
+          link="https://old.connie-liu.me/p5.js-showcase/#/"
         />
         <SmallCard
           pic="/images/old.png"
           title="OLD PORTFOLIO"
           type="2019-2022, React.js"
-          link="old.connie-liu.me"
+          link="https://old.connie-liu.me/"
         />
       </div>
-      <h2>
+      <h3>
         <em>
           ✎ More interesting links:{" "}
           <a href="https://github.com/connieliu0" target="_blank">
@@ -86,7 +86,7 @@ export default function Researchcode() {
             Google Summer of Code Article
           </a>
         </em>
-      </h2>
+      </h3>
     </div>
   );
 }
