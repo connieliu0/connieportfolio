@@ -79,6 +79,7 @@ export default function About() {
         <li>2020 - abillion</li>
         <li>2020 - Google Summer of Code</li>
       </ul>
+      <Section name="OUTSIDE OF WORK" />
     </>
   );
 }
