@@ -39,12 +39,7 @@ export default function About() {
             </a>
             . I also co-founded an open{" "}
             <a href="https://bit.ly/CUxD">UX Design club</a> at Cornell to
-            increase access to a design community. For{" "}
-            <a href="https://wicc.cornell.edu/#/">
-              Women in Computing at Cornell
-            </a>
-            , I was VP Brand - making CIS more inclusive through media
-            campaigns.
+            increase access to a design community.
           </p>
           <p>
             I'm deeply interested in how tech intersects with creativity and

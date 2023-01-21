@@ -3,7 +3,7 @@ blockquote{
   font-size: 1.5em;
   color: #858585
 }
-html,
+
 body {
   max-width: 990px;
   margin: auto;
@@ -70,4 +70,10 @@ img {
 main{
   max-width: 800px;
   margin: auto;
+}
+@media (max-width: 900px) {
+  body{
+    width:99vw;
+  padding-right: 0 auto;
+}
 }

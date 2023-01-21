@@ -13,12 +13,12 @@
   margin-top: 0em;
 }
 .width425 h4{
-  width:425px;
   margin-bottom: 0.2em;
 }
 .width275 {
   width:275px;
   display: inline-block;
+  margin-bottom:1.5em;
 }
 .width275 h6{
   margin-top: .5em;
@@ -60,7 +60,6 @@
   align-items: top;
   display: flex;
   flex-direction: row;
-  margin-bottom:2em;
 }
 .galleryrow img:hover{
     -webkit-transition-property: all; 
@@ -81,9 +80,12 @@
   max-width: 920px;
   margin: 4vh auto;
 }
+.lineem{
+  display: flex;
+  flex-direction:row;
+}
 .lineem p{
 line-height: 1em;
-display: inline-block;
 }
 .marginleft{
   display:flex;
@@ -113,10 +115,25 @@ margin-top: 64px;
 }
 /* responsive row */
 @media (max-width: 900px) {
+  .width425 {
+    width: 100%;
+  }
+  .width425 h4{
+    width: 100%;
+  }
   .row{
+    width:100%;
     flex-direction:column;
   }
   .galleryrow{
     flex-direction:column
   }
+  .navcontainer{
+    flex-direction: column;
+  }
+  .navcontainer p{
+    margin-left: 0px;
+    margin-right:32px;
+  }
+
 }

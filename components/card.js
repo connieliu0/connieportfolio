@@ -7,7 +7,7 @@ export default function Card(props) {
     <div>
       <Link href={`/${props.link}`}>
         <div className={utilStyles.width425}>
-          <Image priority src={props.pic} height={212.5} width={425} />{" "}
+          <img src={props.pic} />{" "}
           <div className={styles.card}>
             <div className={styles.row}>
               <h6>{props.title}</h6>

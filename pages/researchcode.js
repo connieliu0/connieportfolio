@@ -8,7 +8,7 @@ import SmallCard from "../components/smallcard";
 
 export default function Researchcode() {
   return (
-    <div>
+    <>
       <Head>
         <title>Research and Code</title>
       </Head>
@@ -16,8 +16,8 @@ export default function Researchcode() {
         Beyond design, I love investigating new futures with research and
         building through code ⚘
       </h1>
-      <Section name="RESEARCH WORK" />
-      <div className={utilstyles.row}>
+      <Section name="RESEARCH" />
+      <div className={utilstyles.galleryrow}>
         <Research
           name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
           subtitle="Fall 2021, Published in ACM COMPASS ‘22"
@@ -29,8 +29,6 @@ export default function Researchcode() {
           subtitle="Fall 2022, In-Submission for CSCW"
           link="https://drive.google.com/file/d/1npwB1PUe8KlnzIm10cXuh19TxL3YQ96Y/view?usp=sharing"
         />
-      </div>
-      <div className={utilstyles.row}>
         <Research
           name="Student Mental Health Analysis w/ College Reddit Data"
           subtitle="Spring 2022, Text Mining Final Project"
@@ -51,7 +49,7 @@ export default function Researchcode() {
           </a>
         </em>
       </h3>
-      <Section name="CODE PROJECTS" />
+      <Section name="CODE" />
       <div className={utilstyles.galleryrow}>
         <SmallCard
           pic="/images/viz.png"
@@ -87,6 +85,6 @@ export default function Researchcode() {
           </a>
         </em>
       </h3>
-    </div>
+    </>
   );
 }

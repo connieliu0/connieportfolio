@@ -25,8 +25,8 @@ export default function Home({ allPostsData }) {
       <div className={styles.row}>
         <div>
           <h1>
-            Connie is a cross-functional designer with a background in research
-            and code fascinated with scaling systems ✿{" "}
+            Connie is a designer with a background in research and code
+            fascinated with scaling systems ✿{" "}
           </h1>
           <p>
             Previously at Scale AI, The New York Times, BuzzFeed, and various

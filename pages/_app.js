@@ -32,9 +32,6 @@ export default function App({ Component, pageProps }) {
           ✿<a href="https://www.are.na/connie-liu-kg4ypfp7ry0"> aren.a </a>
         </p>
         <p>🍞 this site was kneaded (coded) from scratch with next.js 🍞 </p>
-        <p>
-          values: earnestness, optimism, kindness and questioning the status quo
-        </p>
       </div>
     </div>
   );
