@@ -1,0 +1,104 @@
+{
+  "Art": [
+    {
+      "name": "life.jpg"
+    },
+    {
+      "name": "rain.jpg"
+    },
+    {
+      "name": "p2.jpg"
+    },
+    {
+      "name": "p3.jpg"
+    },
+    {
+      "name": "touch.png"
+    }
+  ],
+  "Work": [
+    {
+      "title": "Dreambound (Contract)",
+      "desc": "Designing usability improvements to decrease dropoff time and migrating design system from Storybook to Figma.",
+      "year": "3.5M Seed Round • 2023"
+    },
+    {
+      "title": "Scale AI",
+      "desc": "Designed 11 projects from data quality to onboarding for 3 products that earn over a million in revenue.",
+      "year": "2022"
+    },
+    {
+      "title": "Kleiner Perkins Fellow",
+      "desc": "Designed high fidelity MVP for Simple HealthKit (rapid testing startup) w/ the Kleiner Perkins Fellowship (<3% acceptance rate) part-time",
+      "year": "2022"
+    },
+    {
+      "title": "NYTimes",
+      "desc": "Led and shipped design on system-wide workflow improvements for newsroom tools for for modules that get 5 million views a day.",
+      "year": "2022"
+    },
+    {
+      "title": "Mintlify (Contract)",
+      "desc": "Created scalable and future-proof design system in 18 hours.",
+      "year": "Funded by Bain Capital Ventures • 2023"
+    },
+    {
+      "title": "BuzzFeed",
+      "desc": "Designed an editor for social media automations to aid data-driven decision making from user research to handoff.",
+      "year": "2021"
+    },
+    {
+      "title": "Civic Digital Fellow",
+      "desc": "Designed education section for NIH wiki for Civic Digital fellowship (10% acceptance rate). ",
+      "year": "2020"
+    },
+    {
+      "title": "abillion",
+      "desc": "Design and shipped error reporting and community growth feature ideation for vegan review app.",
+      "year": "10 million series A • 2020"
+    },
+    {
+      "title": "Google Summer of Code",
+      "desc": "Developed and designed p5.js Computational Art Showcase for the Processing Foundation with React.js and marketed to grow showcase entries 10-fold. Received 6k visitors monthly w/ over 100k views.",
+      "year": "2020"
+    }
+  ],
+  "Other": [
+    {
+      "name": "Aditya Vashishtha Lab",
+      "role": "UX Research",
+      "year": "21-22",
+      "desc": "Published a paper about closing the digital gender gap to COMPASS. Wrote a paper about fact-checking in India based on the analysis of 10 interviews to CSCW."
+    },
+    {
+      "name": "Kernel Magazine",
+      "role": "Editorial Design",
+      "year": "22",
+      "desc": "Created the print layout of kernelmag.io, a magazine about techno-optimism backed by the Omidyar Network and a part of Reboot, a certified nonprofit."
+    },
+    {
+      "name": "Designing AI Lab",
+      "role": "UX Research",
+      "year": "20-21",
+      "desc": "Investigated AI design opportunities in women's health through user research and literature. Did a self-study on image to poetry generation using ml5.js and Runway.."
+    },
+    {
+      "name": "Hack4Impact",
+      "role": "Team Lead, Founding Product and Design Lead",
+      "year": "20-22",
+      "desc": "H4I is a 50+ team that builds software for nonprofits. Founded product design team sophomore year and nonprofit product sourcing and research team. Designed a visualization tool for a prison reform nonprofit. As team lead, increased retention by 30% and expanded launch from 3 to 5 products. Created design resources and workshops for H4I’s 11 university chapters. Efforts recognized by Cornell Engineering as Student Group of the year."
+    },
+    {
+      "name": "Cornell UX Design Club",
+      "role": "Co-founder",
+      "year": "20-22",
+      "desc": "Co-founded club to foster the design community through mentorship, workshops, panels, and book clubs that brought an audience of 40 students."
+    },
+    {
+      "name": "Women in Computing@Cornell",
+      "role": "VP Brand",
+      "year": "20-22",
+      "desc": "WICC's goal is to increase inclusivity and diversity in the computing space. Helped direct four eboard members to redesign website and run growth marketing campaigns to an audience of 2000+."
+    }
+  ]
+}

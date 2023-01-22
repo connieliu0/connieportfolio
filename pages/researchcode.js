@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Head from "next/head";
 import Section from "../components/section";
 import Research from "../components/research";
@@ -16,46 +15,43 @@ export default function Researchcode() {
         Beyond design, I love investigating new futures with research and
         building through code ⚘
       </h1>
-      <Section name="RESEARCH" />
+      <Section name="RESEARCH PAPERS" />
       <div className={utilstyles.galleryrow}>
         <Research
           name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
-          subtitle="Fall 2021, Published in ACM COMPASS ‘22"
+          subtitle="2021, Published in ACM COMPASS ‘22"
           link="https://drive.google.com/file/d/1mvkjPViXFqJfskEJQo8Xdrk6YQG3AmrM/view?usp=sharing"
         />
         <Research
           name="Examining Human and
           Technological Infrastructures of Fact-Checking in Rural India"
-          subtitle="Fall 2022, In-Submission for CSCW"
+          subtitle="2022, In-Submission for CSCW"
           link="https://drive.google.com/file/d/1npwB1PUe8KlnzIm10cXuh19TxL3YQ96Y/view?usp=sharing"
-        />
-        <Research
-          name="Student Mental Health Analysis w/ College Reddit Data"
-          subtitle="Spring 2022, Text Mining Final Project"
-          link="https://github.com/connieliu0/textmining-final/blob/main/project.ipynb"
-        />
-        <Research
-          name="Encouraging Positive Social Media Use to Improve Mental Wellness"
-          subtitle="Spring 2021, Qualitative User Research Methods"
-          link="https://drive.google.com/file/d/11kyZiwPxJoDplAi2A3KzzhicOBl1cZw3/view?usp=sharing"
         />
       </div>
       <h3>
         {" "}
         <em>
-          ✎ More writing on my{" "}
+          ✎ More writing links:{" "}
           <a href="https://corny.substack.com" target="_blank">
             Substack
+          </a>
+          ,{" "}
+          <a
+            href="https://drive.google.com/file/d/11kyZiwPxJoDplAi2A3KzzhicOBl1cZw3/view?usp=sharing"
+            target="_blank"
+          >
+            Encouraging Positive Social Media Use
           </a>
         </em>
       </h3>
       <Section name="CODE" />
       <div className={utilstyles.galleryrow}>
         <SmallCard
-          pic="/images/viz.png"
-          title="HATE CRIMES DATAVIZ"
-          type="Spring 2021, d3.js"
-          link="https://old.connie-liu.me/info3300_project2/"
+          pic="/images/sentiment.png"
+          title="COLLEGE MENTAL HEALTH"
+          type="2022, Reddit Text Mining w/ NumPy"
+          link="https://github.com/connieliu0/textmining-final/blob/main/project.ipynb/"
         />
         <SmallCard
           pic="/images/gsoc.png"
@@ -69,10 +65,28 @@ export default function Researchcode() {
           type="2019-2022, React.js"
           link="https://old.connie-liu.me/"
         />
+        <SmallCard
+          pic="/images/viz.png"
+          title="HATE CRIMES DATAVIZ"
+          type="Spring 2021, d3.js"
+          link="https://old.connie-liu.me/info3300_project2/"
+        />
+        <SmallCard
+          pic="/images/wordle.png"
+          title="WORDLE VIZ"
+          type="2022, d3.js"
+          link="https://old.connie-liu.me/info4310-hw2/static/"
+        />
+        <SmallCard
+          pic="/images/taxi.png"
+          title="NYC TAXI VIZ"
+          type="2022, d3.js"
+          link="https://info4310-final.vercel.app/static/"
+        />
       </div>
       <h3>
         <em>
-          ✎ More interesting links:{" "}
+          ✎ More coding links:{" "}
           <a href="https://github.com/connieliu0" target="_blank">
             Github
           </a>

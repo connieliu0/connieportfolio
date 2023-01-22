@@ -12,6 +12,9 @@ export default function App({ Component, pageProps }) {
             <Link href="/">
               <p>Design</p>
             </Link>
+            <Link href="/visual">
+              <p>Visual</p>
+            </Link>
             <Link href="/researchcode">
               <p>Research+Code</p>
             </Link>
