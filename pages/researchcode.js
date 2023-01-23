@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/Image";
+import Image from "next/image";
 import Section from "../components/section";
 import Research from "../components/research";
 import utilstyles from "../styles/utils.module.css";
