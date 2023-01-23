@@ -3,6 +3,7 @@ title: "Startups etc."
 date: "2018-08-01"
 type: "Seed to Series A"
 pic: "/images/startup.png"
+next: "nyt"
 
 time: "2020-Present"
 header: ""
