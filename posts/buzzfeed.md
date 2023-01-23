@@ -3,6 +3,7 @@ title: "BuzzFeed"
 date: "2019-12-01"
 type: "Social Media Automation"
 pic: "/images/buzzfeed.png"
+next: "/startups"
 
 time: "8 weeks"
 header: "/images/buzzfeedcover.png"

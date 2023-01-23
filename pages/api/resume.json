@@ -1,19 +1,55 @@
 {
   "Art": [
     {
+      "name": "kernel1.png",
+      "desc": "Kernel Magazine Section Cover"
+    },
+    {
+      "name": "kernel2.png",
+      "desc": "Procreate"
+    },
+    {
+      "name": "kernel3.png",
+      "desc": "Indesign"
+    },
+    {
+      "name": "p1.jpg",
+      "desc": "Scholastic National Silver Medal"
+    },
+    {
+      "name": "p2.jpg",
+      "desc": "Top 2% of submissions"
+    },
+    {
+      "name": "p3.jpg",
+      "desc": "About the overwhelmingness of art"
+    },
+    {
+      "name": "hill1.png"
+    },
+    {
+      "name": "whatgoes.jpg"
+    },
+    {
+      "name": "hill2.png"
+    },
+    {
       "name": "life.jpg"
     },
     {
       "name": "rain.jpg"
     },
     {
-      "name": "p2.jpg"
-    },
-    {
-      "name": "p3.jpg"
-    },
-    {
       "name": "touch.png"
+    },
+    {
+      "name": "design1.png"
+    },
+    {
+      "name": "design2.png"
+    },
+    {
+      "name": "design3.png"
     }
   ],
   "Work": [

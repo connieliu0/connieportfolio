@@ -3,6 +3,8 @@ import { getAllPostIds, getPostData } from "../lib/posts";
 import Header from "../components/header.js";
 import { MDXProvider } from "@mdx-js/react";
 import Three from "../components//three.js";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
 export default function Post({ postData }) {
   return (
@@ -17,6 +19,16 @@ export default function Post({ postData }) {
       <Layout>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Layout>
+      <div className={utilStyles.galleryrow}>
+        <Link href="/">
+          <h2>← Back to home</h2>
+        </Link>
+        {postData.next.length !== 0 && (
+          <Link href={postData.next}>
+            <h2>Next Project →</h2>
+          </Link>
+        )}
+      </div>
     </div>
   );
 }

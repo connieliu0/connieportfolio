@@ -3,6 +3,7 @@ title: "NYTimes"
 date: "2018-01-01"
 type: "News CMS (UNDER NDA)"
 pic: "/images/nytimes.png"
+next: "/hack"
 
 time: "8 weeks"
 header: "/images/nytcover.png"

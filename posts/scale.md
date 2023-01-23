@@ -3,6 +3,7 @@ title: "Scale AI"
 date: "2020-01-01"
 pic: "/images/scale.png"
 type: "Ensuring high data quality for ML"
+next: "/buzzfeed"
 
 time: "12 weeks"
 header: "/images/scalecover.png"

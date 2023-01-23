@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/Image";
 import Section from "../components/section";
 import Research from "../components/research";
 import utilstyles from "../styles/utils.module.css";
+import styles from "../components/layout.module.css";
+
 import SmallCard from "../components/smallcard";
 
 export default function Researchcode() {
@@ -11,10 +14,36 @@ export default function Researchcode() {
       <Head>
         <title>Research and Code</title>
       </Head>
-      <h1>
-        Beyond design, I love investigating new futures with research and
-        building through code ⚘
-      </h1>
+      <div className={utilstyles.row}>
+        <div>
+          <h1>
+            Beyond design, I love investigating new futures with research and
+            building through code ⚘
+          </h1>
+          <h3>
+            {" "}
+            <em>
+              ✎ More writing links:{" "}
+              <a href="https://corny.substack.com" target="_blank">
+                Substack
+              </a>
+              ,{" "}
+              <a
+                href="https://drive.google.com/file/d/11kyZiwPxJoDplAi2A3KzzhicOBl1cZw3/view?usp=sharing"
+                target="_blank"
+              >
+                Encouraging Positive Social Media Use
+              </a>
+            </em>
+          </h3>
+        </div>
+        <Image
+          src={`/art/headerillos1.png`}
+          height={180}
+          width={144}
+          margin-right={20}
+        />{" "}
+      </div>
       <Section name="RESEARCH PAPERS" />
       <div className={utilstyles.galleryrow}>
         <Research
@@ -29,22 +58,6 @@ export default function Researchcode() {
           link="https://drive.google.com/file/d/1npwB1PUe8KlnzIm10cXuh19TxL3YQ96Y/view?usp=sharing"
         />
       </div>
-      <h3>
-        {" "}
-        <em>
-          ✎ More writing links:{" "}
-          <a href="https://corny.substack.com" target="_blank">
-            Substack
-          </a>
-          ,{" "}
-          <a
-            href="https://drive.google.com/file/d/11kyZiwPxJoDplAi2A3KzzhicOBl1cZw3/view?usp=sharing"
-            target="_blank"
-          >
-            Encouraging Positive Social Media Use
-          </a>
-        </em>
-      </h3>
       <Section name="CODE" />
       <div className={utilstyles.galleryrow}>
         <SmallCard

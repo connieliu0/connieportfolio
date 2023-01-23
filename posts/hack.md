@@ -3,6 +3,7 @@ title: "Hack4Impact"
 date: "2010-08-01"
 type: ""
 pic: ""
+next: ""
 
 time: "2 years"
 header: "/hack/hackcover.png"
