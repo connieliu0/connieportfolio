@@ -15,7 +15,7 @@ I’ve also gotten the chance to work at several smaller startups as well as do 
 
 # Mintlify (2023)
 
-Seed-stage startup focused on documentation (2M, funded by Bain Capital Ventures). Setting up the design system and brand design.
+Seed-stage startup focused on documentation (2M, funded by Bain Capital Ventures). Setting up the design system and brand design. View the design system file [here](https://www.figma.com/file/Jtxm8hPNLhKMtdJpaqVtKs/Mint-Design-System?node-id=14%3A127&t=Sr2OBdYQklDhfssa-1).
 
 ![Mintlify](startups/startup.png)
 
