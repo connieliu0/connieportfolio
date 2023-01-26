@@ -21,12 +21,6 @@ export default function About() {
             width={220} // Desired size with correct aspect ratio
             alt="profile"
           />
-          <iframe
-            width="800"
-            height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fczej4B70ewj3tUa9nQxRun%2FScale-Case%3Fpage-id%3D3%253A70%26node-id%3D102%253A5784%26viewport%3D-983%252C-208%252C0.29%26scaling%3Dscale-down%26starting-point-node-id%3D102%253A5784"
-            allowfullscreen
-          ></iframe>
           <div className={utilstyles.width550}>
             <h1 className={utilstyles.margin0}>❀ Hi, I'm Connie!</h1>
             <p>
