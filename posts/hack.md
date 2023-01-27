@@ -15,7 +15,7 @@ context: "Founding Designer, Team Lead"
 
 - [Written](https://medium.com/hack4impact/reflecting-on-hack4impact-design-as-a-national-director-a5ce7d5dbf63) about the process of creating design resources for all Hack4Impact chapters and mentored a [design team](https://medium.com/cornellh4i) - growing it from 0 to 6 designers.
 
-- Grown since my [first project](https://connie-liu.me/#/habitat) where I had to iterate on a product in two weeks as well as teach proper frontend to two of the engineers.
+- Grown since my [first project](https://old.connie-liu.me/#/habitat) where I had to iterate on a product in two weeks as well as teach proper frontend to two of the engineers.
 
 - Scaled the organization from **30 to 50+** members, **3 to 5** projects, created **a product research system**, led recruitment to review **100+ apps**, increased retention **by 30%**
 
@@ -25,4 +25,4 @@ We were recently recognized for our efforts in improving as an organization by w
 
 ![cany](hack/cany.png)
 
-### Read [here](https://medium.com/cornellh4i/creating-a-visualization-platform-for-prison-complaints-a-design-case-study-55e25e2d327) about how I designed CANY's data visualization platform!
+### Read [here](https://medium.com/cornellh4i/creating-a-visualization-platform-for-prison-complaints-a-design-case-study-55e25e2d3277) about how I designed CANY's data visualization platform!
