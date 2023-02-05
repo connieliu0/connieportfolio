@@ -2,7 +2,13 @@
   line-height: 1.5em
 }
 .layout main h1{
+  margin-top: 2.5em
+}
+.layout main h2{
   margin-top: 2em
+}
+.layout main h3{
+  margin-top: 1.75em
 }
 .exp{
 
@@ -71,7 +77,9 @@
   border-radius:2em;
 
 }
-
+.profile .row{
+  margin-bottom:2.5em;
+}
 .row h6{
   margin-top:0px;
   margin-bottom:0px

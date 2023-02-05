@@ -10,22 +10,25 @@ export default function App({
 }) {
   return (
     <div>
+      <base target="_blank"></base>
       <SessionProvider session={session} refetchInterval={5 * 60}>
         {/* <Provider session={pageProps.session}>
         <Component {...pageProps} />
       </Provider> */}
         <div className={styles.navcontainer}>
-          <h6>CONNIE LIU</h6>
+          <Link href="/">
+            <h6>❀ CONNIE LIU</h6>
+          </Link>
           <div className={styles.marginleft}>
             <div className={styles.lineem}>
               <Link href="/">
                 <p>Design</p>
               </Link>
-              <Link href="/visual">
-                <p>Visual</p>
-              </Link>
               <Link href="/researchcode">
                 <p>Research+Code</p>
+              </Link>
+              <Link href="/visual">
+                <p>Visual</p>
               </Link>
               <Link href="/about">
                 <p>About</p>

@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 export default function SmallCard(props) {
   return (
     <div>
-      <a href={props.link} target="_blank">
+      <Link href={props.link}>
         <div className={utilStyles.width275}>
           <Image priority src={props.pic} height={225} width={275} />{" "}
           <div>
@@ -13,7 +13,7 @@ export default function SmallCard(props) {
             <p className={utilStyles.lineem}>{props.type}</p>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

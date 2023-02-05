@@ -43,13 +43,17 @@ Sustainability tracking is an overdone idea - and I wanted to avoid the key pitf
 
 The first startup I worked at (raised 10M series A after internship)! I shipped the reporting system and worked on a speculative product proposal centered around vegan communities leading design synthesis or 50+ survey responses and 8 interviews.
 
+Read the case study [here](https://old.connie-liu.me/#/abillion)
+
 ![abillion](startups/startup%201.png)
 
 # NIH (2020)
 
 For the Fall of 2020 I was selected to be part of the 37 person [Civic Digital Fellowship](https://www.codingitforward.com/civic-digital-fellowship) cohort (10% acceptance rate). The fellowship is a paid internship for student technologists to solve pressing problems in federal agencies and foray into civic tech.
 
-For my project, I was tasked with creating an education section geared towards the public for the National Institute of Biomedical Imaging and Bioengineering's [Interagency Modeling and Analysis Group Wiki](https://www.imagwiki.nibib.nih.gov/).
+For my project, I was tasked with creating an education section geared towards the public for the National Institute of Biomedical Imaging and Bioengineering's Interagency Modeling and Analysis Group Wiki.
+
+Read the case study [here](https://old.connie-liu.me/#/NIH)
 
 ![nih](startups/startup%202.png)
 

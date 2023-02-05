@@ -93,7 +93,7 @@ export default function About() {
           <h2>✎ </h2>
           Doodling for my{" "}
           <a href="https://www.instagram.com/conliuart/">art blog</a>, reading
-          and drawing comics. I once had a
+          and drawing comics. I once had a{" "}
           <a href="https://www.webtoons.com/en/challenge/paper-planes/chapter-one/viewer?title_no=38596&episode_no=2">
             webcomic
           </a>{" "}
