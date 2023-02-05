@@ -42,8 +42,15 @@ export default function Home({ allPostsData }) {
         />{" "}
       </div>
       <Section name="WORK PROJECTS" />
+
       <div className={styles.galleryrow}>
-        {allPostsData.slice(0, 4).map(({ id, title, pic, type }) => (
+        <Card
+          pic={"/images/scale.png"}
+          title={"Scale AI"}
+          link={"scaleai"}
+          type={"Ensuring high data quality for ML"}
+        />
+        {allPostsData.slice(1, 4).map(({ id, title, pic, type }) => (
           <Card pic={pic} title={title} link={id} type={type} />
         ))}
       </div>

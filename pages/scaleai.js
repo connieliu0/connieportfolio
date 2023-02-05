@@ -2,6 +2,8 @@ import React from "react";
 import { signIn, useSession } from "next-auth/react";
 import Header from "../components/header.js";
 import Layout from "../components/layout";
+import Link from "next/link";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Page() {
   const { data: session, status } = useSession();
@@ -22,19 +24,38 @@ export default function Page() {
             time={"12 weeks"}
           />
           <Layout>
-            <h2>Below is an overview of my projects.</h2>
-            {/* <iframe
-              style="border: 1px solid rgba(0, 0, 0, 0.1);"
-              width="800"
-              height="450"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fczej4B70ewj3tUa9nQxRun%2FScale-Case%3Fpage-id%3D3%253A70%26node-id%3D102%253A5784%26viewport%3D-983%252C-208%252C0.29%26scaling%3Dmin-zoom%26starting-point-node-id%3D102%253A5784"
-              allowfullscreen
-            ></iframe> */}
             <h2>
-              Please <a href="mailto:cl2264@cornell.edu">email me</a> if you
-              would like to see my process for all my other projects.
+              Below is an overview of my projects. (Figma link{" "}
+              <a href="https://www.figma.com/proto/czej4B70ewj3tUa9nQxRun/Scale-Case?page-id=3%3A70&node-id=102%3A5784&viewport=410%2C106%2C0.03&scaling=scale-down&starting-point-node-id=102%3A5784&show-proto-sidebar=1">
+                here
+              </a>
+              )
             </h2>
           </Layout>
+          <div className="figma">
+            {
+              <iframe
+                width="1100"
+                height="600"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fczej4B70ewj3tUa9nQxRun%2FScale-Case%3Fpage-id%3D3%253A70%26node-id%3D102%253A5784%26viewport%3D410%252C106%252C0.03%26scaling%3Dscale-down%26starting-point-node-id%3D102%253A5784%26show-proto-sidebar%3D1"
+                allowfullscreen
+              ></iframe>
+            }
+          </div>
+          <Layout>
+            <h2>
+              Please <a href="mailto:cl2264@cornell.edu">email me</a> if you
+              would like to see my process (what I show for portfolio review).
+            </h2>
+          </Layout>
+          <div className={utilStyles.galleryrow}>
+            <Link href="/">
+              <h2>← Back to home</h2>
+            </Link>
+            <Link href="/buzzfeed">
+              <h2>Next Project →</h2>
+            </Link>
+          </div>
         </>
       ) : (
         <p>
@@ -47,13 +68,11 @@ export default function Page() {
           />
           <Layout>
             <p>
-              While at Scale I was on three product teams (one of which is
-              confidential) where I worked on <strong>11 projects</strong>{" "}
-              ranging in scope from design systems to visual alignment
-              redesigns. In each team I did the whole product development
-              process - from working with product managers to plan user research
-              if necessary to handing off designs to engineers and doing visual
-              QA.
+              While at Scale (a unicorn startup with 7.5B evaluation) I was on
+              three product teams where I worked on <strong>11 projects</strong>{" "}
+              from design systems to scoping out a new product feature. In each
+              team I did the whole product development process - from user
+              research to handing off designs to engineers and doing visual QA.
             </p>
             <h4>
               Please <a href="mailto:cl2264@cornell.edu">email me</a> to learn
@@ -64,6 +83,14 @@ export default function Page() {
             </h4>
             <button onClick={signIn}>Use Portfolio Password</button>
           </Layout>
+          <div className={utilStyles.galleryrow}>
+            <Link href="/">
+              <h2>← Back to home</h2>
+            </Link>
+            <Link href="/buzzfeed">
+              <h2>Next Project →</h2>
+            </Link>
+          </div>
         </p>
       )}
     </>

@@ -48,7 +48,7 @@ p {
 }
 strong{
   font-weight:700;
-  color: rgb(23, 98, 2);
+  color: rgb(18, 61, 92);
 }
 em{
   color: #858585;
@@ -70,6 +70,33 @@ img {
 main{
   max-width: 800px;
   margin: auto;
+}
+button {
+  background-color: #5F957B; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight:600
+}
+.figma{
+  max-width:1100px;
+}
+button:hover{
+  background-color: #20553b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight:600
 }
 @media (max-width: 900px) {
   body{

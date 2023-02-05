@@ -68,6 +68,7 @@
   align-content: center;
   flex-wrap: wrap;
 }
+
 .profile img{
   display: block;
   margin: 2em;
