@@ -11,7 +11,7 @@ role: "0 - 1 design, research to shipping"
 context: "Founding Designer, Team Lead"
 ---
 
-[Hack4Impact](https://cornellh4i.org) is one of my most formative experiences in college and has made me critically think about the role we hold as technologists and how important design is to developing responsibly. I've
+[Hack4Impact](https://cornellh4i.org) is one of my most formative experiences in college and has made me critically think about the role we hold as technologists and how important design is to developing responsibly. I've -
 
 - [Written](https://medium.com/hack4impact/reflecting-on-hack4impact-design-as-a-national-director-a5ce7d5dbf63) about the process of creating design resources for all Hack4Impact chapters and mentored a [design team](https://medium.com/cornellh4i) - growing it from 0 to 6 designers.
 

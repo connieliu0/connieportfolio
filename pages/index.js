@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
         <Card
           pic={"/images/scale.png"}
           title={"Scale AI"}
-          link={"scaleai"}
+          link={"scale"}
           type={"Ensuring high data quality for ML"}
         />
         {allPostsData.slice(1, 4).map(({ id, title, pic, type }) => (

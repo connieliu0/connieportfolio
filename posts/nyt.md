@@ -13,7 +13,7 @@ context: "Guiding users through publishing"
 
 # Constraints and Learnings
 
-Due to its proximity to traditional new management, the team I was on at NYT was extremely limited in giving designers agency. Here is how I navigated around constraints:
+Due to its proximity to traditional news management, the team I was on at NYT was extremely limited in giving designers agency. Here is how I navigated around constraints:
 
 1. **A low-bandwidth PM who was managing four teams** - I navigated around this by asking other team members on analogous CMS products about their design process to reduce the number of iterations. Also I juggled two projects so I could work on one while waiting for the PM to answer my questions async.
 
