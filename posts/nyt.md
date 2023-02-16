@@ -11,6 +11,8 @@ role: "0 - 1 design, research to shipping"
 context: "Guiding users through publishing"
 ---
 
+### If you have the password, click on this [link](https://www.figma.com/file/Kzre7Hkibvn86NWoQF2pI0/Pilot-Editing-Experience-%E2%80%94-Summer-2022?node-id=2%3A3&t=7ryXW2h1NPxWeRjV-1) for more detail
+
 # Constraints and Learnings
 
 Due to its proximity to traditional news management, the team I was on at NYT was extremely limited in giving designers agency. Here is how I navigated around constraints:

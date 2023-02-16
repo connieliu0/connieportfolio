@@ -11,17 +11,19 @@ role: "0 - 1 design, research to shipping"
 context: "MVP's, Design Systems, Product"
 ---
 
-I’ve also gotten the chance to work at several smaller startups as well as do other design work. Below is a preview of my work for each.
+I’ve also gotten the chance to work at several smaller startups as well as do other design work. Below is a preview of my work for each. **abillion and NIH** have corresponding case studies.
 
 # Mintlify (2023)
 
-Seed-stage startup focused on documentation (2M, funded by Bain Capital Ventures). Setting up the design system and brand design. View the design system file [here](https://www.figma.com/file/Jtxm8hPNLhKMtdJpaqVtKs/Mint-Design-System?node-id=14%3A127&t=Sr2OBdYQklDhfssa-1).
+Seed-stage startup focused on documentation (2M, funded by Bain Capital Ventures). Setting up the design system and brand design.
+
+### View the design system file [here](https://www.figma.com/file/RRaHfRWIFsEEWpsO4HR0wq/Mint-Design-System?node-id=6%3A99&t=Twh1Bh6vZBaLBhPn-1).
 
 ![Mintlify](startups/startup.png)
 
 # Simple Healthkit (2022)
 
-Seed-stage startup focused on cheap rapid testing for healthcare (funded by Kleiner Perkins. Designed the MVP which was presented to clients.
+Series A startup focused on cheap rapid testing for healthcare (funded by Kleiner Perkins. Designed the MVP which was presented to clients.
 
 ![SimpleHealthKit](startups/shk.png)
 
@@ -43,7 +45,7 @@ Sustainability tracking is an overdone idea - and I wanted to avoid the key pitf
 
 The first startup I worked at (raised 10M series A after internship)! I shipped the reporting system and worked on a speculative product proposal centered around vegan communities leading design synthesis or 50+ survey responses and 8 interviews.
 
-Read the case study [here](https://old.connie-liu.me/#/abillion)
+### Read the case study [here](https://old.connie-liu.me/#/abillion)
 
 ![abillion](startups/startup%201.png)
 
@@ -53,7 +55,7 @@ For the Fall of 2020 I was selected to be part of the 37 person [Civic Digital 
 
 For my project, I was tasked with creating an education section geared towards the public for the National Institute of Biomedical Imaging and Bioengineering's Interagency Modeling and Analysis Group Wiki.
 
-Read the case study [here](https://old.connie-liu.me/#/NIH)
+### Read the case study [here](https://old.connie-liu.me/#/NIH)
 
 ![nih](startups/startup%202.png)
 
