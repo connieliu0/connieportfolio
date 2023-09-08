@@ -29,8 +29,8 @@ export default function Home({ allPostsData }) {
             fascinated with scaling systems ✿{" "}
           </h1>
           <p>
-            Previously at Scale AI, The New York Times, BuzzFeed, and various
-            startups (KP Fellows){" "}
+            Currently at Atlassian ☆ Previously at Scale, NYTimes, BuzzFeed, and
+            various startups (KP Fellows){" "}
           </p>
         </div>
         <Image

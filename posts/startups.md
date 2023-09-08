@@ -1,7 +1,7 @@
 ---
-title: "Startups etc."
+title: "Freelance"
 date: "2018-08-01"
-type: "Seed to Series A"
+type: "Reward Reports Research, Startups etc."
 pic: "/images/startup.png"
 next: "nyt"
 
@@ -11,7 +11,14 @@ role: "0 - 1 design, research to shipping"
 context: "MVP's, Design Systems, Product"
 ---
 
-I’ve also gotten the chance to work at several smaller startups as well as do other design work. Below is a preview of my work for each. **abillion and NIH** have corresponding case studies.
+I’ve also gotten the chance to work at several smaller startups (seed to Series A) and miscellaneous places like the NIH and a Cornell Tech Research group.
+
+# Reward Reports (2023)
+
+The [Reward Reports](https://rewardreports.github.io/) project was started for documentation of changes in AI systems. You can view the research report with some examples of Reward Reports [here](https://arxiv.org/abs/2204.10817) with some examples of their structure.
+![RR](startups/rreport.png)
+View the video demo of the edit experience I designed [here](https://www.loom.com/share/7dcf58db3220485bbdf2d772003a5d33?t=43&sid=09114717-c2da-414c-926e-8952ed5c4dee).
+View the video demo of the analytics experience I designed [here](https://www.loom.com/share/a11cba8379e14cdda60d3c62789be4d4)
 
 # Mintlify (2023)
 
