@@ -2,9 +2,6 @@ import "../styles/global.css";
 import styles from "../styles/utils.module.css";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
-
-// import { Provider } from "next-auth/client";
-// import { SessionProvider } from "next-auth/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 export default function App({
   Component,
