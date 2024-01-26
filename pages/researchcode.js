@@ -23,16 +23,9 @@ export default function Researchcode() {
           <h3>
             {" "}
             <em>
-              ✎ More writing links:{" "}
-              <a href="https://corny.substack.com" target="_blank">
-                Substack
-              </a>
-              ,{" "}
-              <a
-                href="https://drive.google.com/file/d/11kyZiwPxJoDplAi2A3KzzhicOBl1cZw3/view?usp=sharing"
-                target="_blank"
-              >
-                Encouraging Positive Social Media Use
+              ✎ Check out a more experimental website I made recently:{" "}
+              <a href="https://connie.surf" target="_blank">
+                connie.surf
               </a>
             </em>
           </h3>
@@ -47,15 +40,15 @@ export default function Researchcode() {
       <Section name="RESEARCH PAPERS" />
       <div className={utilstyles.galleryrow}>
         <Research
+          name="“Fact-checks are for the Top 0.1%”: Examining Reach,
+          Awareness, and Relevance of Fact-Checking in Rural India"
+          subtitle="2022-23, Published in ACM CSCW '24"
+          link="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view"
+        />
+        <Research
           name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
           subtitle="2021, Published in ACM COMPASS ‘22"
           link="https://drive.google.com/file/d/1mvkjPViXFqJfskEJQo8Xdrk6YQG3AmrM/view?usp=sharing"
-        />
-        <Research
-          name="Examining Human and
-          Technological Infrastructures of Fact-Checking in Rural India"
-          subtitle="2022, In-Submission for CSCW"
-          link="https://drive.google.com/file/d/1npwB1PUe8KlnzIm10cXuh19TxL3YQ96Y/view?usp=sharing"
         />
       </div>
       <Section name="CODE" />

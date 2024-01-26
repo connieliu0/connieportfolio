@@ -1,18 +1,6 @@
 {
   "Art": [
     {
-      "name": "kernel1.png",
-      "desc": "Kernel Magazine Section Cover"
-    },
-    {
-      "name": "kernel2.png",
-      "desc": "Procreate"
-    },
-    {
-      "name": "kernel3.png",
-      "desc": "Indesign"
-    },
-    {
       "name": "p1.jpg",
       "desc": "Scholastic National Silver Medal"
     },
@@ -50,6 +38,18 @@
     },
     {
       "name": "design3.png"
+    },
+    {
+      "name": "kernel1.png",
+      "desc": "Kernel Magazine Section Cover"
+    },
+    {
+      "name": "kernel2.png",
+      "desc": "Procreate"
+    },
+    {
+      "name": "kernel3.png",
+      "desc": "Indesign"
     }
   ],
   "Work": [

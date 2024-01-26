@@ -32,8 +32,9 @@ export default function About() {
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
               design, research, and code (I made this website!) and have worked
-              for six different companies ranging in size and mission. Beyond
-              work, I enjoy bringing people together to drive change. At
+              for six different companies ranging in size and mission. Currently
+              I'm designing for administrators at Atlassian. Beyond work, I
+              enjoy bringing people together to drive change. At
               <a href="https://www.cornellh4i.org/"> Hack4Impact</a>, I founded
               the design team and led{" "}
               <a href="https://medium.com/hack4impact/reflecting-on-hack4impact-design-as-a-national-director-a5ce7d5dbf63">
@@ -45,18 +46,17 @@ export default function About() {
             </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
-              public benefit. On the side, I'm researching fact-checking in
-              India under{" "}
-              <a href="https://www.adityavashistha.com/">
-                Professor Vashishtha
+              public benefit. Recently, I published a paper to CSCW researching{" "}
+              <a href="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view">
+                fact-checking in rural India under{" "}
               </a>
-              . I love curation spaces in all forms having created a{" "}
+              . I love curation spaces in all forms, a while ago I created a{" "}
               <a href="https://showcase.p5js.org">computational art showcase</a>{" "}
-              and the layout for{" "}
-              <a href="https://reboothq.substack.com/p/back-to-school">
-                Kernel (tech)
-              </a>{" "}
-              magazine. I'm cautious about solutionistism, lately I've wondered{" "}
+              and most recently an
+              <a href="https://connie.surf">
+                experimental website about myself
+              </a>
+              . I'm cautious about solutionistism, lately I've wondered{" "}
               <a href="https://dl.acm.org/doi/10.1145/1978942.1979275">
                 when to not design technology
               </a>
