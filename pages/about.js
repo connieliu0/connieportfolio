@@ -48,11 +48,11 @@ export default function About() {
               I'm deeply interested in how tech intersects with creativity and
               public benefit. Recently, I published a paper to CSCW researching{" "}
               <a href="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view">
-                fact-checking in rural India under{" "}
+                fact-checking in rural India
               </a>
               . I love curation spaces in all forms, a while ago I created a{" "}
               <a href="https://showcase.p5js.org">computational art showcase</a>{" "}
-              and most recently an
+              and most recently an{" "}
               <a href="https://connie.surf">
                 experimental website about myself
               </a>
