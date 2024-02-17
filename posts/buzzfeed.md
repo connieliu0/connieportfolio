@@ -51,9 +51,10 @@ While prototyping there was no **pre-defined design system**, however I looked t
 
 ## Details View Overview
 
+<!--
 When figuring out the entrypoint I decided to go with option 2 because it was the most clear that by pressing the button the user would both edit and view at the same time.
 
-![image](/buzzfeed/entrypoint.png)
+![image](/buzzfeed/entrypoint.png) -->
 
 For the general flow I had settled on having the details view show up through a **popup** do reduce cognitive friction of opening a new page and allow users to do their day to day of quickly checking on different automations.
 
@@ -79,11 +80,11 @@ There were two key edits involved to mitigate the need for explanatory supplemen
 
 ![image](/buzzfeed/Untitled%2019.png)
 
-## Removing
+<!-- ## Removing
 
 With removal I went through a similar process, ultimately, we went with inline removal as it reinforced each condition as a separate movable entity.
 
-![image](/buzzfeed/Untitled%2020.png)
+![image](/buzzfeed/Untitled%2020.png) -->
 
 ## Defining the Layout of the Page
 
