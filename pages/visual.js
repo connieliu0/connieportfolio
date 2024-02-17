@@ -14,8 +14,8 @@ export default function Visual() {
       <div className={utilstyles.row}>
         <div>
           <h1>
-            In my free time I love illustrations, print graphics, and non-linear
-            narratives ⚘
+            In my free time I'm enamoured by illustrations, print graphics, and
+            non-linear narratives ⚘
           </h1>
           <h3>
             {" "}
@@ -35,7 +35,7 @@ export default function Visual() {
         />{" "}
       </div>
       <Section name="2019 to Present" />
-      <div className={utilstyles.galleryrow}>
+      <div className={utilstyles.artgalleryrow}>
         {data.Art.map(({ name, desc }) => (
           <div className={utilstyles.width275}>
             <img src={`/art/${name}`} />

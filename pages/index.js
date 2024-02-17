@@ -24,14 +24,21 @@ export default function Home({ allPostsData }) {
       </Head>
       <div className={styles.row}>
         <div>
-          <h1>
-            Connie is a designer with a background in research and code
-            fascinated with scaling systems ✿{" "}
-          </h1>
-          <p>
-            Currently at Atlassian ☆ Previously at Scale, NYTimes, BuzzFeed, and
-            various startups (KP Fellows){" "}
-          </p>
+          <h1>Connie is a product designer and crafter of tools ✿ </h1>
+          <em>
+            <h3>
+              currently at Atlassian ☆ previously at Scale AI, NYT, BuzzFeed,
+              and KP Fellows. Outside of design, she is perpetually on a quest
+              of{" "}
+              <a href="https://www.connie-liu.me/researchcode" target="_blank">
+                curiousity
+              </a>{" "}
+              and{" "}
+              <a href="https://www.connie-liu.me/researchcode" target="_blank">
+                self-expression
+              </a>
+            </h3>
+          </em>
         </div>
         <Image
           priority
@@ -54,7 +61,25 @@ export default function Home({ allPostsData }) {
           <Card pic={pic} title={title} link={id} type={type} />
         ))}
       </div>
-      <Section name="CASE STUDIES" />
+      <h3>
+        <em>
+          ✎ More design case studies:{" "}
+          <a
+            href="https://connieliu.notion.site/Encouraging-Figma-Use-for-Novices-through-Templates-and-Onboarding-ef4e6778175c49fa99595605bf1d1bb8"
+            target="_blank"
+          >
+            Figma Templates Strategy
+          </a>
+          ,{" "}
+          <a
+            href="https://uxdesign.cc/finding-your-own-nests-a-twitter-case-study-970d2aa4efd8"
+            target="_blank"
+          >
+            Twitter Groups Case Study
+          </a>{" "}
+        </em>
+      </h3>
+      {/* <Section name="CASE STUDIES" />
       <div className={styles.galleryrow}>
         <SmallCard
           pic="/images/h4i.png"
@@ -74,7 +99,7 @@ export default function Home({ allPostsData }) {
           type="Making it easier to tweet what you want"
           link="https://uxdesign.cc/finding-your-own-nests-a-twitter-case-study-970d2aa4efd8"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

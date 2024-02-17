@@ -5,51 +5,33 @@
       "desc": "Scholastic National Silver Medal"
     },
     {
+      "name": "hill1.png"
+    },
+    {
+      "name": "life.jpg"
+    },
+    {
       "name": "p2.jpg",
       "desc": "Top 2% of submissions"
+    },
+    {
+      "name": "worm.PNG"
+    },
+    {
+      "name": "hill2.png"
+    },
+    {
+      "name": "rain.jpg"
     },
     {
       "name": "p3.jpg",
       "desc": "About the overwhelmingness of art"
     },
     {
-      "name": "hill1.png"
+      "name": "searching.png"
     },
     {
-      "name": "whatgoes.jpg"
-    },
-    {
-      "name": "hill2.png"
-    },
-    {
-      "name": "life.jpg"
-    },
-    {
-      "name": "rain.jpg"
-    },
-    {
-      "name": "touch.png"
-    },
-    {
-      "name": "design1.png"
-    },
-    {
-      "name": "design2.png"
-    },
-    {
-      "name": "design3.png"
-    },
-    {
-      "name": "kernel1.png",
-      "desc": "Kernel Magazine Section Cover"
-    },
-    {
-      "name": "kernel2.png",
-      "desc": "Procreate"
-    },
-    {
-      "name": "kernel3.png",
-      "desc": "Indesign"
+      "name": "Stumbleupon.png"
     }
   ],
   "Work": [

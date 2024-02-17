@@ -53,6 +53,16 @@
   display:flex;
   flex-direction:row;
   align-items: center;
+  gap: 20px;
+}
+.artgalleryrow{
+  width:100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 1480px;
 }
 .galleryrow{
   width:100%;
@@ -130,10 +140,14 @@ margin-bottom:24px;
     width:100%;
     flex-direction:column;
   }
-  .galleryrow{
-    flex-direction:column;
+  .artgalleryrow{
+    flex-direction:row;
     align-items: center;
-
+    height:100%;
+  }
+  .galleryrow{
+    flex-direction:row;
+    align-items: center;
   }
   .navcontainer{
     flex-direction: column;
