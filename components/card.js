@@ -9,10 +9,8 @@ export default function Card(props) {
         <div className={utilStyles.width425}>
           <img src={props.pic} />{" "}
           <div className={styles.card}>
-            <div className={styles.row}>
-              <h6>{props.title}</h6>
-              <p className={utilStyles.lineem}>{props.type}</p>
-            </div>
+            <h3>{props.title}</h3>
+            <p className={utilStyles.lineem}>{props.type}</p>
           </div>
         </div>
       </Link>

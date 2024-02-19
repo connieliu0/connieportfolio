@@ -28,8 +28,7 @@ export default function Home({ allPostsData }) {
           <em>
             <h3>
               currently at Atlassian ☆ previously at Scale AI, NYT, BuzzFeed,
-              and KP Fellows. Outside of design, she is perpetually on a quest
-              of{" "}
+              and KP Fellows. She is perpetually on a quest of{" "}
               <a href="https://www.connie-liu.me/researchcode" target="_blank">
                 curiousity
               </a>{" "}
@@ -55,7 +54,9 @@ export default function Home({ allPostsData }) {
           pic={"/images/scale.png"}
           title={"Scale AI"}
           link={"scale"}
-          type={"Ensuring high data quality for ML"}
+          type={
+            "Scale AI is a unicorn startup focused on data quality for ML applications. I worked across three product groups building features ranging from editor setup to data quality management."
+          }
         />
         {allPostsData.slice(1, 4).map(({ id, title, pic, type }) => (
           <Card pic={pic} title={title} link={id} type={type} />

@@ -8,7 +8,7 @@ next: "/buzzfeed"
 time: "12 weeks"
 header: "/images/scalecover.png"
 role: "0 - 1 design, research to shipping"
-context: "Data Quality + Labeling Platform for ML projects"
+context: "Data Quality Platform for ML projects"
 ---
 
 While at Scale I was on three product teams where I worked on **11 projects** from 0-1 features to design systems. I had a range of duties in each cross-functional team, from working with product managers to plan user research to handing off designs to engineers and ensuring designs were implemented correctly.
