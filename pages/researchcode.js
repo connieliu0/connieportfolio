@@ -84,8 +84,8 @@ export default function Researchcode() {
             target="_blank"
           >
             Google Summer of Code Article
-          </a>{" "}
-          ,
+          </a>
+          ,{" "}
           <a href="https://old.connie-liu.me/" target="_blank">
             old portfolio (2019-2022)
           </a>

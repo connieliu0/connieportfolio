@@ -27,8 +27,8 @@ export default function Home({ allPostsData }) {
           <h1>Connie is a product designer and crafter of tools ✿ </h1>
           <em>
             <h3>
-              currently at Atlassian ☆ previously at Scale AI, NYT, BuzzFeed,
-              and KP Fellows. She is perpetually on a quest of{" "}
+              currently designing at Atlassian ☆ previously at Scale AI, NYT,
+              BuzzFeed, and KP Fellows. She is perpetually on a quest of{" "}
               <a href="https://www.connie-liu.me/researchcode" target="_blank">
                 curiousity
               </a>{" "}
@@ -54,12 +54,13 @@ export default function Home({ allPostsData }) {
           pic={"/images/scale.png"}
           title={"Scale AI"}
           link={"scale"}
+          role={"0 - 1 Design / Visual Design / Design Systems"}
           type={
-            "Scale AI is a unicorn startup focused on data quality for ML applications. I worked across three product groups building features ranging from editor setup to data quality management."
+            "Scale AI is a unicorn startup focused on data quality for ML applications. Worked across three product groups building features ranging from editor setup to data quality management."
           }
         />
-        {allPostsData.slice(1, 4).map(({ id, title, pic, type }) => (
-          <Card pic={pic} title={title} link={id} type={type} />
+        {allPostsData.slice(1, 6).map(({ id, title, pic, type, role }) => (
+          <Card pic={pic} title={title} link={id} type={type} role={role} />
         ))}
       </div>
       <h3>

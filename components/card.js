@@ -11,6 +11,9 @@ export default function Card(props) {
           <div className={styles.card}>
             <h3>{props.title}</h3>
             <p className={utilStyles.lineem}>{props.type}</p>
+            <p className={utilStyles.lineem}>
+              <em>{props.role}</em>
+            </p>
           </div>
         </div>
       </Link>

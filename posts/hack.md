@@ -1,13 +1,13 @@
 ---
 title: "Hack4Impact"
 date: "2010-08-01"
-type: ""
-pic: ""
+type: "Founded the design team for student group that built software for nonprofits. As team lead, worked to redesign infrastructure to create sustainable partnerships and team culture."
+pic: "/images/h4icover.png"
 next: ""
 
 time: "2 years"
 header: "/hack/hackcover.png"
-role: "0 - 1 design, research to shipping"
+role: "Leadership / Product Thinking / Mentorship"
 context: "Founding Designer, Team Lead"
 ---
 

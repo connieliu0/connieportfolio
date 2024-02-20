@@ -71,15 +71,16 @@
 
 .profile img{
   display: block;
-  margin: 2em;
   -webkit-box-shadow: 5px 5px 50px 9px rgba(255,252,175,0.21); 
   box-shadow: 5px 5px 50px 9px rgba(255,252,175,0.21);
   margin-bottom:1.5em;
-  border-radius:2em;
+  border-radius:9em;
 
 }
 .profile .row{
   margin-bottom:2.5em;
+  align-items: center;
+  justify-content: space-between;
 }
 .row h6{
   margin-top:0px;

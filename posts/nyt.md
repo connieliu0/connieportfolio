@@ -1,17 +1,15 @@
 ---
 title: "NYTimes"
 date: "2018-01-01"
-type: "News CMS (UNDER NDA)"
+type: "Worked on workflow improvements for an internal news publishing CMS in a low-resourced environment."
 pic: "/images/nytimes.png"
 next: "/hack"
 
 time: "8 weeks"
 header: "/images/nytcover.png"
-role: "0 - 1 design, research to shipping"
+role: "Interaction Design"
 context: "Guiding users through publishing"
 ---
-
-### If you have the password, click on this [link](https://www.figma.com/file/Kzre7Hkibvn86NWoQF2pI0/Pilot-Editing-Experience-%E2%80%94-Summer-2022?node-id=2%3A3&t=7ryXW2h1NPxWeRjV-1) for more detail
 
 # Constraints and Learnings
 
@@ -22,6 +20,8 @@ Due to its proximity to traditional news management, the team I was on at NYT wa
 2. **Restricted user interaction** - Because our users were busy journalists, it was difficult to get feedback even for an internal tool. I relied on documentation from prior research sprints to get up to date with user problems and prepared for weekly 10 minute calls with product onboarding liasons who served as a proxy.
 
 3. **Lack of documentation** - To better understand the design workflow, I asked designers what got most stakeholder buyin. Due to the team's low engineering bandwidth I learned feasibility was emphasized, I used this as a north star in proposing my ideas which were eventually sent to production.
+
+<!-- ### If you have the password, click on this [link](https://www.figma.com/file/Kzre7Hkibvn86NWoQF2pI0/Pilot-Editing-Experience-%E2%80%94-Summer-2022?node-id=2%3A3&t=7ryXW2h1NPxWeRjV-1) for more detail of my 4 week CMS project. -->
 
 # Work Overview
 

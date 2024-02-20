@@ -5,7 +5,7 @@
   width:350px;
 }
 .width550 {
-  max-width:450px;
+  max-width:490px;
 }
 .width425 {
   width:800px;
@@ -22,12 +22,12 @@
   margin-bottom: 0.2em;
 }
 .width275 {
-  width:225px;
+  width:220px;
   display: inline-block;
   margin-bottom:1.5em;
 }
 .width275 img{
-    height:100%;
+    height:auto;
 }
 .width360 {
   width: 360px;
@@ -71,7 +71,7 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 1380px;
+  height: 1300px;
 }
 .galleryrow{
   width:100%;
@@ -80,7 +80,7 @@
   align-items: flex-start;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 50px;
 }
 
 .galleryrow a img:hover{
@@ -106,8 +106,9 @@
   display: flex;
   flex-direction:row;
 }
-.lineem p{
+.lineem a{
 line-height: 1em;
+margin-right:2em;
 }
 .marginleft{
   display:flex;
@@ -144,6 +145,7 @@ margin-bottom:24px;
   .width425 {
     width: 100%;
     flex-direction: column;
+    gap: 0px;
   }
   .width425 h4{
     width: 100%;
@@ -161,6 +163,8 @@ margin-bottom:24px;
   .galleryrow{
     flex-direction:row;
     align-items: center;
+    gap: 30px;
+
   }
   .navcontainer{
     flex-direction: column;

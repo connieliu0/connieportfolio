@@ -1,13 +1,13 @@
 ---
 title: "BuzzFeed"
 date: "2019-12-01"
-type: "Social Media Automation"
+type: "Designed an editor for BuzzFeed's social media automation tool."
 pic: "/images/buzzfeed.png"
 next: "/startupsc"
 
 time: "8 weeks"
 header: "/images/buzzfeedcover.png"
-role: "0 - 1 design, research to shipping"
+role: "Interaction Design / Content Design"
 context: "Creating an Automations Editor"
 ---
 
@@ -27,21 +27,28 @@ Currently to edit an automation users have to talk to **the product specialist*
 
 ![image](/buzzfeed/Untitled.png)
 
-# Research
+# Solution Overview
 
-However to get to the final product, I had to understand the fine details of what users were currently doing. During user research calls with ten social publishers of varying rank - I asked:
+An interface that allows users to directly experiment and adjust their current social media automations.
+
+![image](/buzzfeed/buzzfeed2.gif)
+
+As a stretch goal I also ideated some ways metrics could be incorporated to evaluate the effectiveness of different automation settings.
+![image](/buzzfeed/Untitled%201.png)
+
+# The Process: User Research
+
+To inform design decisions for the final product, I had to understand the fine details of what users were currently doing. During user research calls with ten social publishers of varying rank - I asked:
 
 1. How do users make these decisions to edit parameters? Are there ways we could provide information to help them?
 
+- Got a list of parameters and how often they're typically used to help introduce an engineering scalability plan as well as important metrics that help guide decision-making
+
 2. What is the current state of education with automations within the social publishers?
 
-3. What action flows (editing, creating new automations) do users do the most?
-
-## Key Takeaways
-
-- Got a list of parameters and important metrics to help introduce a scalability plan
-
 - Users are not intimidated by automation technicalities but rather they're unsure how different parameters affected results
+
+3. What action flows (editing, creating new automations) do users do the most?
 
 - Users edit more than create, they will focus on only editing one automation at a time
 
@@ -126,25 +133,27 @@ A major problem that we ran into was that users **did not know when** or **what 
 
 ## Looking into the Past
 
-### Line Graph
+<!-- ### Line Graph
 
 In the beginning, I thought a line graph would be perfect for determining the success of automations in its trajectory throughout time.
 
 ![image](/buzzfeed/Untitled%203.png)
 
-However, I realized that because users would be editing multiple parameters, it made less sense to include graphs because it would be harder to pinpoint what changes in metrics caused the difference.
+However, I realized that because users would be editing multiple parameters, it made less sense to include graphs because it would be harder to pinpoint what changes in metrics caused the difference. -->
 
 ### Past History
 
-Eventually, this evolved into the past history view - I debated it having a dropdown on the same page versus on a separate tab. I went with a separate tab as I scoped out user behavior - users would ultimately only edit one parameter at a time so an avenue for multitasking wouldn't be needed.
+<!-- Eventually, this evolved into the past history view - I debated it having a dropdown on the same page versus on a separate tab. I went with a separate tab as I scoped out user behavior - users would ultimately only edit one parameter at a time so an avenue for multitasking wouldn't be needed.
 
-![image](/buzzfeed/Untitled%204.png)
+![image](/buzzfeed/Untitled%204.png) -->
 
-Based off the explorations I decided to only show parameters that were editable in the preview and allow users the option to view all parameters if needed. One aspect I was unsure about was the utility of **having users toggle what was reviewable**. To get more feedback, I went to user testing.
+<!-- Based off the explorations I decided to only show parameters that were editable in the preview and allow users the option to view all parameters if needed. One aspect I was unsure about was the utility of **having users toggle what was reviewable**. To get more feedback, I went to user testing. -->
 
-![image](/buzzfeed/Untitled%206.png)
+I created a past history view to help users understand the exact settings that led to certain metrics.
 
-After segmenting it a bit more, I was able to land on the final version below which broke it up into three subsections and emphasized the different settings so users could easily understand the specifics.
+<!-- ![image](/buzzfeed/Untitled%206.png)
+
+After segmenting it a bit more, I was able to land on the final version below which broke it up into three subsections and emphasized the different settings so users could easily understand the specifics. -->
 
 ![image](/buzzfeed/Untitled%208.png)
 
@@ -194,7 +203,8 @@ I would measure the success of this feature by qualitatively noting any changes 
 **Validate with limited testing** - I learned how to formulate hypothesis and different decision frameworks to predict which designs would work best for users.
 
 **Exercise product-thinking early** - My first project was a notifications project, however I was able to quickly scope out the project and determine for the engineering capacity given, it would be better to use a free out-of-box alternative.
-![image](/buzzfeed/announcements.png)
+
+<!-- ![image](/buzzfeed/announcements.png) -->
 
 # Extra
 

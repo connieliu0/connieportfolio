@@ -22,18 +22,10 @@ export default function App({
         </Link>
         <div className={styles.marginleft}>
           <div className={styles.lineem}>
-            <Link href="/">
-              <p>Design</p>
-            </Link>
-            <Link href="/researchcode">
-              <p>Research+Code</p>
-            </Link>
-            <Link href="/visual">
-              <p>Visual</p>
-            </Link>
-            <Link href="/about">
-              <p>About</p>
-            </Link>
+            <Link href="/">Design</Link>
+            <Link href="/researchcode">Research+Code</Link>
+            <Link href="/visual">Visual</Link>
+            <Link href="/about">About</Link>
           </div>
         </div>
       </div>
