@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
                 curiousity
               </a>{" "}
               and{" "}
-              <a href="https://www.connie-liu.me/researchcode" target="_blank">
+              <a href="https://www.connie-liu.me/visual" target="_blank">
                 self-expression
               </a>
             </h3>

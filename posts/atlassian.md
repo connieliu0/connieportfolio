@@ -1,7 +1,7 @@
 ---
 title: "Atlassian"
 date: "2020-12-01"
-type: "Designing features for our product administration platform such as search and email notifications."
+type: "Designing search for administrators and AI-enhanced dashboard analytics experiences."
 pic: "/images/atlassian.png"
 next: "/startups"
 
@@ -13,6 +13,10 @@ context: "Designing for Administrators"
 
 ## Overview
 
-Currently closely working with product to design and ship a search experience and product strategy to boost the productivity of thousands of Atlassian administrators. Also am working on strategy to consolidate email notifications. In addition, I work on defining design patterns for the admin design system through auditing and critique.
+At Atlassian my work spans two teams on admin tools and our analytics dashboard. 
+
+For our analytics product (Atlassian Analytics) I am working on AI tools to boost the approachability and productivity of our users who create and view dashboards that monitor various aspects from pull requests to revenue.
+
+For the admin side, closely working with product to design and ship a search experience and product strategy to boost the productivity of thousands of Atlassian administrators. Also am working on strategy to consolidate email notifications. In addition, I work on defining design patterns for the admin design system through auditing and critique.
 
 My work is currently under NDA as it has not been shipped yet, but please [email me](mailto:cliu55567@gmail.com) for more information and if you're curious about my work!
