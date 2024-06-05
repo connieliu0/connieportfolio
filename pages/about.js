@@ -30,7 +30,7 @@ export default function About() {
             </p>
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (I made this website!). Beyond work, I
+              design, research, and code (I made this website!). Currently, I am creating AI-enabled dashboard visualization tooling for Atlassian Analytics. Beyond work, I
               enjoy bringing people together to drive change. In college, I
               founded the design team at
               <a href="https://www.cornellh4i.org/"> Hack4Impact</a> and
