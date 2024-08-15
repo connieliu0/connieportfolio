@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
           <h1>Connie is a product designer and crafter of tools ✿ </h1>
           <em>
             <h3>
-              currently designing AI at Atlassian ☆ previously at Scale AI, NYT,
+              currently designing at Atlassian ☆ previously at Scale AI, NYT,
               BuzzFeed, and KP Fellows. She is perpetually on a quest of{" "}
               <a href="https://www.connie-liu.me/researchcode" target="_blank">
                 curiousity
