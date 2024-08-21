@@ -19,4 +19,4 @@ For our analytics product (Atlassian Analytics) I am working on AI tools to boos
 
 For the admin side, closely working with product to design and ship a search experience and product strategy to boost the productivity of thousands of Atlassian administrators. Also am working on strategy to consolidate email notifications. In addition, I work on defining design patterns for the admin design system through auditing and critique.
 
-My work is currently under NDA as it has not been shipped yet, but please [email me](mailto:cliu55567@gmail.com) for more information and if you're curious about my work!
+### If you have the password, [view a high level overview of my work using this link](https://www.figma.com/design/V55cFiM6dHt3hYW9yOzsvO/Connie-Liu---Atlassian?node-id=0-1&t=14vvUXB1X37tKy6t-1) (password in my resume).
