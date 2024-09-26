@@ -30,30 +30,28 @@ export default function About() {
             </p>
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (I made this website!). Currently, I am creating AI-enabled dashboard visualization tooling for Atlassian Analytics. Beyond work, I
-              enjoy bringing people together to drive change. In college, I
-              founded the design team at
-              <a href="https://www.cornellh4i.org/"> Hack4Impact</a> and
-              co-founded an open access{" "}
-              <a href="https://bit.ly/CUxD">UX Design club</a> at Cornell. On
-              the side of all that, I earned a degree in Data and Computer
-              Science.
-            </p>
+              design, research, and code (I made this website!). Currently, I'm working on Atlassian Analytics and admin experiences; previously I was at Scale AI, NYTimes, and BuzzFeed. 
+              </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
               public benefit. Recently, I published a paper to CSCW researching{" "}
               <a href="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view">
                 fact-checking in rural India
               </a>
-              . I love curation spaces in all forms, a while ago I created a{" "}
-              <a href="https://showcase.p5js.org">computational art showcase</a>{" "}
-              and most recently an{" "}
+              . I love curation spaces in all forms, most recently I created an{" "}
               <a href="https://connie.surf">experimental website</a> about
               myself. I'm cautious about solutionism, I've been wondering{" "}
               <a href="https://dl.acm.org/doi/10.1145/1978942.1979275">
                 when to not design technology
               </a>
               .
+            </p>
+            <p>
+              Previously, I got a degree in Data and Computer Science at Cornell, where I
+              founded the design team at
+              <a href="https://www.cornellh4i.org/"> Hack4Impact</a> and
+              co-founded an open access{" "}
+              <a href="https://bit.ly/CUxD">UX Design club</a>. Before that, I grew up Pennsylvania, where I originally wanted to be an environmental scientist.
             </p>
             <p>
               Read more on my{" "}

@@ -25,8 +25,7 @@ export default function Home({ allPostsData }) {
       <div className={styles.row}>
         <div>
           <h1>Connie is a product designer and crafter of tools ✿ </h1>
-          <em>
-            <h3>
+            <p>
               currently designing at Atlassian ☆ previously at Scale AI, NYT,
               BuzzFeed, and KP Fellows. She is perpetually on a quest of{" "}
               <a href="https://www.connie-liu.me/researchcode" target="_blank">
@@ -36,8 +35,7 @@ export default function Home({ allPostsData }) {
               <a href="https://www.connie-liu.me/visual" target="_blank">
                 self-expression
               </a>
-            </h3>
-          </em>
+            </p>
         </div>
         <Image
           priority
@@ -50,16 +48,7 @@ export default function Home({ allPostsData }) {
       <Section name="WORK PROJECTS" />
 
       <div className={styles.galleryrow}>
-        <Card
-          pic={"/images/scale.png"}
-          title={"Scale AI"}
-          link={"scale"}
-          role={"0 - 1 Design / Visual Design / Design Systems"}
-          type={
-            "Scale AI is a unicorn startup focused on data quality for ML applications. Worked across three product groups building features ranging from editor setup to data quality management."
-          }
-        />
-        {allPostsData.slice(1, 6).map(({ id, title, pic, type, role }) => (
+        {allPostsData.map(({ id, title, pic, type, role }) => (
           <Card pic={pic} title={title} link={id} type={type} role={role} />
         ))}
       </div>

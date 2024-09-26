@@ -17,15 +17,13 @@ export default function Visual() {
             In my free time I'm enamoured by illustrations, print graphics, and
             non-linear narratives ⚘
           </h1>
-          <h3>
+          <p>
             {" "}
-            <em>
               ✎ More visual links:{" "}
               <a href="https://instagram.com/conliuart" target="_blank">
                 Instagram
               </a>{" "}
-            </em>
-          </h3>
+          </p>
         </div>
         <Image
           src={`/art/headerillos3.png`}

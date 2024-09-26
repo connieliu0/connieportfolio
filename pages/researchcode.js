@@ -20,15 +20,13 @@ export default function Researchcode() {
             Beyond design, I enjoy critically examining technology with research
             and code ⚘
           </h1>
-          <h3>
-            {" "}
-            <em>
+          <p>
+
               ✎ Check out a website I made as an abstraction of self:{" "}
               <a href="https://connie.surf" target="_blank">
                 connie.surf
               </a>
-            </em>
-          </h3>
+          </p>
         </div>
         <Image
           src={`/art/headerillos1.png`}
@@ -72,8 +70,7 @@ export default function Researchcode() {
           link="https://old.connie-liu.me/info3300_project2/"
         />
       </div>
-      <h3>
-        <em>
+      <p>
           ✎ More coding links:{" "}
           <a href="https://github.com/connieliu0" target="_blank">
             Github
@@ -89,8 +86,7 @@ export default function Researchcode() {
           <a href="https://old.connie-liu.me/" target="_blank">
             old portfolio (2019-2022)
           </a>
-        </em>
-      </h3>
+      </p>
     </>
   );
 }
