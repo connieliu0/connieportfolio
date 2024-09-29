@@ -2,7 +2,7 @@
   "Art": [
     {
       "name": "p1.jpg",
-      "desc": "Scholastic National Silver Medal"
+      "desc": "National Silver Medal"
     },
     {
       "name": "hill1.png"
@@ -76,7 +76,7 @@
       "year": "10 million series A • 2020"
     },
     {
-      "title": "Google Summer of Code",
+      "title": "p5.js",
       "desc": "Developed and designed p5.js Computational Art Showcase for the Processing Foundation with React.js and marketed to grow showcase entries 10-fold. Received 6k visitors monthly w/ over 100k views.",
       "year": "2020"
     }

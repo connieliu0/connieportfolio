@@ -30,7 +30,7 @@ export default function About() {
             </p>
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (I made this website!). Currently, I'm working on Atlassian Analytics and admin experiences; previously I was at Scale AI, NYTimes, and BuzzFeed. 
+              design, research, and code (I made this website!). Currently, I'm working on <a href="https://www.atlassian.com/platform/analytics/what-is-atlassian-analytics">Atlassian Analytics</a> and admin experiences; previously I was at Scale AI, NYTimes, and BuzzFeed. 
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
@@ -38,13 +38,7 @@ export default function About() {
               <a href="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view">
                 fact-checking in rural India
               </a>
-              . I love curation spaces in all forms, most recently I created an{" "}
-              <a href="https://connie.surf">experimental website</a> about
-              myself. I'm cautious about solutionism, I've been wondering{" "}
-              <a href="https://dl.acm.org/doi/10.1145/1978942.1979275">
-                when to not design technology
-              </a>
-              .
+              . I also currently serve as Creative Director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
             </p>
             <p>
               Previously, I got a degree in Data and Computer Science at Cornell, where I

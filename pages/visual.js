@@ -12,6 +12,7 @@ export default function Visual() {
         <title>Visual Work</title>
       </Head>
       <div className={utilstyles.row}>
+      <div class="animate-text delay-1">
         <div>
           <h1>
             In my free time I'm enamoured by illustrations, print graphics, and
@@ -32,6 +33,8 @@ export default function Visual() {
           margin-right={20}
         />{" "}
       </div>
+      </div>
+      <div class="animate-text delay-2">
       <Section name="2019 to Present" />
       <div className={utilstyles.artgalleryrow}>
         {data.Art.map(({ name, desc }) => (
@@ -40,6 +43,7 @@ export default function Visual() {
             <p>{desc}</p>
           </div>
         ))}
+      </div>
       </div>
     </>
   );

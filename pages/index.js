@@ -23,9 +23,9 @@ export default function Home({ allPostsData }) {
         <title>Connie Liu Portfolio</title>
       </Head>
       <div className={styles.row}>
-        <div>
-          <h1>Connie is a product designer and crafter of tools ✿ </h1>
-            <p>
+        <div class ="animate-text">
+          <h1 class="animate-text delay-1">Connie is a product designer and crafter of tools ✿ </h1>
+            <p class="animate-text delay-1">
               currently designing at Atlassian ☆ previously at Scale AI, NYT,
               BuzzFeed, and KP Fellows. She is perpetually on a quest of{" "}
               <a href="https://www.connie-liu.me/researchcode" target="_blank">
@@ -45,6 +45,7 @@ export default function Home({ allPostsData }) {
           margin-right={20}
         />{" "}
       </div>
+      <div class="animate-text delay-2">
       <Section name="WORK PROJECTS" />
 
       <div className={styles.galleryrow}>
@@ -52,8 +53,7 @@ export default function Home({ allPostsData }) {
           <Card pic={pic} title={title} link={id} type={type} role={role} />
         ))}
       </div>
-      <h3>
-        <em>
+      <p>
           ✎ More design case studies:{" "}
           <a
             href="https://connieliu.notion.site/Encouraging-Figma-Use-for-Novices-through-Templates-and-Onboarding-ef4e6778175c49fa99595605bf1d1bb8"
@@ -68,8 +68,7 @@ export default function Home({ allPostsData }) {
           >
             Twitter Groups Case Study
           </a>{" "}
-        </em>
-      </h3>
+      </p>
       {/* <Section name="CASE STUDIES" />
       <div className={styles.galleryrow}>
         <SmallCard
@@ -91,6 +90,7 @@ export default function Home({ allPostsData }) {
           link="https://uxdesign.cc/finding-your-own-nests-a-twitter-case-study-970d2aa4efd8"
         />
       </div> */}
+    </div>
     </div>
   );
 }

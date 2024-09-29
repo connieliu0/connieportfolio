@@ -15,7 +15,7 @@ export default function Researchcode() {
         <title>Research and Code</title>
       </Head>
       <div className={utilstyles.row}>
-        <div>
+      <div class="animate-text delay-1">
           <h1>
             Beyond design, I enjoy critically examining technology with research
             and code ⚘
@@ -35,17 +35,18 @@ export default function Researchcode() {
           margin-right={20}
         />{" "}
       </div>
+      <div class="animate-text delay-2">
       <Section name="RESEARCH PAPERS" />
       <div className={utilstyles.galleryrow}>
         <Research
           name="“Fact-checks are for the Top 0.1%”: Examining Reach,
           Awareness, and Relevance of Fact-Checking in Rural India"
-          subtitle="2022-23, Published in ACM CSCW '24"
+          subtitle="2022, Published in ACM CSCW"
           link="https://drive.google.com/file/d/1WHGkG2l7mKBCkYRjdxcuEtkZRm5Z2Kwk/view"
         />
         <Research
           name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
-          subtitle="2021, Published in ACM COMPASS ‘22"
+          subtitle="2021, Published in ACM COMPASS"
           link="https://drive.google.com/file/d/1WHGkG2l7mKBCkYRjdxcuEtkZRm5Z2Kwk/view"
         />
       </div>
@@ -59,7 +60,7 @@ export default function Researchcode() {
         />
         <SmallCard
           pic="/images/gsoc.png"
-          title="GOOGLE SUMMER OF CODE"
+          title="p5.js Showcase"
           type="Summer 2020, React.js"
           link="https://old.connie-liu.me/p5.js-showcase/#/"
         />
@@ -87,6 +88,8 @@ export default function Researchcode() {
             old portfolio (2019-2022)
           </a>
       </p>
+      </div>
+
     </>
   );
 }
