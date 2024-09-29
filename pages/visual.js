@@ -12,8 +12,7 @@ export default function Visual() {
         <title>Visual Work</title>
       </Head>
       <div className={utilstyles.row}>
-      <div class="animate-text delay-1">
-        <div>
+        <div class="animate-text delay-1">
           <h1>
             In my free time I'm enamoured by illustrations, print graphics, and
             non-linear narratives ⚘
@@ -26,13 +25,13 @@ export default function Visual() {
               </a>{" "}
           </p>
         </div>
-        <Image
+        <Image 
+          class="animate-text delay-1"
           src={`/art/headerillos3.png`}
           height={200}
           width={150}
           margin-right={20}
         />{" "}
-      </div>
       </div>
       <div class="animate-text delay-2">
       <Section name="2019 to Present" />

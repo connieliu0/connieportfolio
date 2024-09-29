@@ -136,6 +136,10 @@ padding-top: 20px;
 margin-top: 64px;
 margin-bottom:24px;
 }
+
+.layout img{
+  margin: 0 auto;
+}
 /* responsive row */
 @media (max-width: 900px) {
   .width360 {

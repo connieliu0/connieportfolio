@@ -28,7 +28,7 @@ export default function Researchcode() {
               </a>
           </p>
         </div>
-        <Image
+        <Image class="animate-text delay-1"
           src={`/art/headerillos1.png`}
           height={180}
           width={144}

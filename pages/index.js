@@ -38,6 +38,7 @@ export default function Home({ allPostsData }) {
             </p>
         </div>
         <Image
+          class="animate-text delay-1"
           priority
           src={"/images/headerillos2.png"}
           height={200}

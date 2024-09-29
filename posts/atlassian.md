@@ -6,25 +6,35 @@ pic: "/images/atlassian.png"
 next: "/scale"
 
 time: "Present"
-header: ""
+header: "/images/atlassiancover.png"
 role: "Strategy / Systems Design / Design Systems"
-context: "Designing Dashboards and Administrators"
+context: "Designing for Dashboards and Admins"
 ---
 
-## Overview
-
-At Atlassian my work spans two teams on admin tools and our analytics dashboard. 
+## Atlassian Analytics 
 
 Our analytics product (Atlassian Analytics) is an add on for enterprise customers and consists of dashboards are mainly used to monitor company productivity at a high level - from pull requests to revenue. Some features I designed: 
 
-- Designed a tool to prompt AI-generated SQLite custom formulas for [data querying](https://community.atlassian.com/t5/Atlassian-Analytics-articles/Write-custom-formulas-using-Atlassian-Intelligence/ba-p/2817872) that is 10% more accurate than the standard solution and led to increased creation of custom formulas. 
-- Designing custom templates to make it easier for customers to share dashboard configurations cross-company.
-- Designing subscriptions - a way to keep up to date with dashboard updates.
+**A tool to prompt AI-generated SQLite custom formulas** for data queryingthat is 10% more accurate than the standard solution and led to increased creation of custom formulas ([launch announcement]((https://community.atlassian.com/t5/Atlassian-Analytics-articles/Write-custom-formulas-using-Atlassian-Intelligence/ba-p/2817872)))
+
+![image](/atlassian/AI_formula.gif)
+
+### AI-powered SQLite [Case Study](https://read.cv/connieliu/ai-customformula) (password in resume!)
+
+
+**Custom templates** to make it easier for customers to share dashboard configurations cross-company.
+
+![image](/atlassian/customtemp.png)
+
+**Subscriptions** (still in progress), a way to keep up to date with dashboard updates.
   
-On the admin side, I am working closely with product to:
+## Atlassian Admin Experinece
 
-- Design and ship a search experience and product strategy to boost the productivity of thousands of Atlassian administrators.
-- Solidify design patterns for empty states and table actions
-- Growth strategies with Atlassian administration and email notification strategies
+Admin.atlassian.com is the hub for thousands of organizations to manager their users and product instances. I designed:
 
-### Case studies are currently in progress, but please email me for more!
+**A search experience and vision** to boost the productivity of thousands of Atlassian administrators.
+
+![image](/atlassian/search.gif)
+
+**Design patterns** for empty states and table actions as well as **growth strategies** with Atlassian administration and email notification strategies
+
