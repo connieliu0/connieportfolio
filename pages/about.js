@@ -45,7 +45,7 @@ export default function About() {
               founded the design team at
               <a href="https://www.cornellh4i.org/"> Hack4Impact</a> and
               co-founded an open access{" "}
-              <a href="https://bit.ly/CUxD">UX Design club</a>. Before that, I grew up Pennsylvania, where I originally wanted to be an environmental scientist.
+              <a href="https://bit.ly/CUxD">UX Design club</a>. Before that, I grew up in Pennsylvania, where I originally wanted to be an environmental scientist - a part of me is still tinkering about the  <a href="https://www.are.na/connie-liu-kg4ypfp7ry0/organic-web">organic web</a>.
             </p>
             <p>
               Read more on my{" "}
