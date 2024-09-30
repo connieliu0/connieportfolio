@@ -5,7 +5,7 @@ type: "Worked on workflow improvements for an internal news publishing CMS in a 
 pic: "/images/nytimes.png"
 next: "/hack"
 
-time: "8 weeks"
+time: "2022"
 header: "/images/nytcover.png"
 role: "Interaction Design"
 context: "Guiding users through publishing"

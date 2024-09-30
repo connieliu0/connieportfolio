@@ -47,13 +47,21 @@ export default function Home({ allPostsData }) {
         />{" "}
       </div>
       <div class="animate-text delay-2">
-      <Section name="WORK PROJECTS" />
-
+      <Section name="FEATURED PROJECTS" />
       <div className={styles.galleryrow}>
-        {allPostsData.map(({ id, title, pic, type, role }) => (
+        {allPostsData.slice(0,2).map(({ id, title, pic, type, role }) => (
           <Card pic={pic} title={title} link={id} type={type} role={role} />
         ))}
       </div>
+      <br/>
+      <br/>
+      <Section name="MORE PROJECTS" />
+      <div className={styles.galleryrow}>
+        {allPostsData.slice(2,6).map(({ id, title, pic, type, role }) => (
+          <Card pic={pic} title={title} link={id} type={type} role={role} />
+        ))}
+      </div>
+      <br/>
       <p>
           ✎ More design case studies:{" "}
           <a

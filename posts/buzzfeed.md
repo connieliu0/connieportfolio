@@ -3,9 +3,9 @@ title: "BuzzFeed"
 date: "2019-12-01"
 type: "Designed an editor for BuzzFeed's social media automation tool."
 pic: "/images/buzzfeed.png"
-next: "/startupsc"
+next: "/nyt"
 
-time: "8 weeks"
+time: "2021"
 header: "/images/buzzfeedcover.png"
 role: "Interaction Design / Content Design"
 context: "Creating an Automations Editor"
@@ -123,7 +123,8 @@ Not only was the prototype, but it also had **strong product value**. Below is a
 
 > “I always don’t want to bug Mireille (Pubhub's Product Specialist) to change one small thing, and that was a hurdle so being able to edit is a big deal.” - Cathy Ngo, Head of Social Strategy
 
-# Part 2: Prototyping Data Metrics 📈
+<!-- # Part 2: Prototyping Data Metrics 📈 
+#### Note the following are future state ideas beyond the MVP
 
 A major problem that we ran into was that users **did not know when** or **what to edit**. After brainstorming, I realized that optimizing consisted of two parts:
 
@@ -131,29 +132,11 @@ A major problem that we ran into was that users **did not know when** or **what 
 
 - Noticing differences: What is the current state of education with automations within the social publishers?
 
-## Looking into the Past
-
-<!-- ### Line Graph
-
-In the beginning, I thought a line graph would be perfect for determining the success of automations in its trajectory throughout time.
-
-![image](/buzzfeed/Untitled%203.png)
-
-However, I realized that because users would be editing multiple parameters, it made less sense to include graphs because it would be harder to pinpoint what changes in metrics caused the difference. -->
+## Looking into the Past 
 
 ### Past History
 
-<!-- Eventually, this evolved into the past history view - I debated it having a dropdown on the same page versus on a separate tab. I went with a separate tab as I scoped out user behavior - users would ultimately only edit one parameter at a time so an avenue for multitasking wouldn't be needed.
-
-![image](/buzzfeed/Untitled%204.png) -->
-
-<!-- Based off the explorations I decided to only show parameters that were editable in the preview and allow users the option to view all parameters if needed. One aspect I was unsure about was the utility of **having users toggle what was reviewable**. To get more feedback, I went to user testing. -->
-
 I created a past history view to help users understand the exact settings that led to certain metrics.
-
-<!-- ![image](/buzzfeed/Untitled%206.png)
-
-After segmenting it a bit more, I was able to land on the final version below which broke it up into three subsections and emphasized the different settings so users could easily understand the specifics. -->
 
 ![image](/buzzfeed/Untitled%208.png)
 
@@ -179,11 +162,11 @@ After talking with engineers and presenting different statistical options, I lea
 
 When testing this feature - we found that 5/5 users had positive responses to all three options - in fact, many expressed they would use each metric for difference purposes.
 
-> “The metrics preview is good to keep an eye on pages that are 100% automated and quick changes. With the graphs, I want my team to keep an eye on pages we aren’t actively scheduling to. Finally, I like the past history because it makes retros easier.” - Cathy Ngo, Head of Social Strategy
+> “The metrics preview is good to keep an eye on pages that are 100% automated and quick changes. With the graphs, I want my team to keep an eye on pages we aren’t actively scheduling to. Finally, I like the past history because it makes retros easier.” - Cathy Ngo, Head of Social Strategy -->
 
 # Solution Overview
 
-We ended up with positive feedback not only from the social media publishers on Buzzfeed, but also the Director of Social Media Strategy herself approved of the designs and agreed with the value-add of the product.
+I ended up with positive feedback not only from the social media publishers on Buzzfeed, but also the Director of Social Media Strategy herself approved of the designs and agreed with the value-add of the product. I also designed future state ideas beyond the MVP that focused on understanding the success of different automations that also received positive feedback from product.
 
 ![image](/buzzfeed/buzzfeed2.gif)
 
@@ -209,6 +192,6 @@ I would measure the success of this feature by qualitatively noting any changes 
 # Extra
 
 ![image](/buzzfeed/Untitled%2029.png)
-Besides my main internship I was able to accomplish two side projects - a Hackweek project involving matching fits for BuzzFeed Commerce that evolved my visual design skills and contributing to auditing the typography of BuzzFeed products for the design system team.
+I also participated in the company's week long hackathon to craft a 0 to 1 project incorporating our new e-commerce partnerships! 
 
 ![image](/buzzfeed/combine.png)
