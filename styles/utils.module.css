@@ -4,6 +4,10 @@
 .width370{
   width:350px;
 }
+.width370 em{
+  margin-top: 0px;
+  font-size: 1.3em;
+}
 .width550 {
   max-width:490px;
 }
@@ -137,9 +141,7 @@ margin-top: 64px;
 margin-bottom:24px;
 }
 
-.layout img{
-  margin: 0 auto;
-}
+
 /* responsive row */
 @media (max-width: 900px) {
   .width360 {

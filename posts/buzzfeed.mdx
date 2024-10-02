@@ -1,16 +1,14 @@
----
-title: "BuzzFeed"
-date: "2019-12-01"
-type: "Designed an editor for BuzzFeed's social media automation tool."
-pic: "/images/buzzfeed.png"
-next: "/nyt"
-
-time: "2021"
-header: "/images/buzzfeedcover.png"
-role: "Interaction Design / Content Design"
-context: "Creating an Automations Editor"
----
-
+export const meta = {
+    title: "BuzzFeed",
+    date: "2019-12-01",
+    type: "Designed an editor for BuzzFeed's social media automation tool.",
+    pic: "/images/buzzfeed.png",
+    next: "/nyt",
+    time: "2021",
+    header: "/images/buzzfeedcover.png",
+    role: "Interaction Design / Content Design",
+    context: "Creating an Automations Editor"
+}
 # Overview
 
 Currently, a majority of content on BuzzFeed socials is auto-generated. A bulk of social media posted content is actually older BuzzFeed articles that have done well in the past. Articles are auto-posted or recommended to social media strategists to be posted through a platform called **Pubhub automations**. Although this saves a lot of time, it takes a decent effort to optimize automations because users **(social media strategists)**, don't have any editing privileges.
@@ -58,11 +56,6 @@ While prototyping there was no **pre-defined design system**, however I looked t
 
 ## Details View Overview
 
-<!--
-When figuring out the entrypoint I decided to go with option 2 because it was the most clear that by pressing the button the user would both edit and view at the same time.
-
-![image](/buzzfeed/entrypoint.png) -->
-
 For the general flow I had settled on having the details view show up through a **popup** do reduce cognitive friction of opening a new page and allow users to do their day to day of quickly checking on different automations.
 
 ![image](/buzzfeed/Untitled%2013.png)
@@ -86,12 +79,6 @@ In the end I went with inline editing and adding because there wasn't any supple
 There were two key edits involved to mitigate the need for explanatory supplemental text. One was breaking it up into three subsections that also had titled explaining the functions of each. The other was changing technical terms like **"active hours"** to more understandable ones like **"post between"**.
 
 ![image](/buzzfeed/Untitled%2019.png)
-
-<!-- ## Removing
-
-With removal I went through a similar process, ultimately, we went with inline removal as it reinforced each condition as a separate movable entity.
-
-![image](/buzzfeed/Untitled%2020.png) -->
 
 ## Defining the Layout of the Page
 
@@ -121,49 +108,6 @@ After 5 rounds of user testing, I found most tasks were completed. The only stru
 
 Not only was the prototype, but it also had **strong product value**. Below is a quote from the **head of social strategy**, a stakeholder that manages all the social media strategists (user of the tool) and sets the tone for the team.
 
-> “I always don’t want to bug Mireille (Pubhub's Product Specialist) to change one small thing, and that was a hurdle so being able to edit is a big deal.” - Cathy Ngo, Head of Social Strategy
-
-<!-- # Part 2: Prototyping Data Metrics 📈 
-#### Note the following are future state ideas beyond the MVP
-
-A major problem that we ran into was that users **did not know when** or **what to edit**. After brainstorming, I realized that optimizing consisted of two parts:
-
-- Looking in the past: To fine-tune automations, users would have to look at past data to refine what previously worked, or to revert to other versions.
-
-- Noticing differences: What is the current state of education with automations within the social publishers?
-
-## Looking into the Past 
-
-### Past History
-
-I created a past history view to help users understand the exact settings that led to certain metrics.
-
-![image](/buzzfeed/Untitled%208.png)
-
-## Noticing Differences
-
-### Looker Integration
-
-From user research I also learned that there were Looker dashboards that people used - however many were unaware they existed. I brainstormed two options to have it as an outlink or to have it as a separate page with graphs.
-
-![image](/buzzfeed/Untitled%209.png)
-
-Although the outlink would be low-lift, it would be hard to ensure that users would be inclined to click on it. To ensure high visibility, we integrated the graphs into the UI itself so users wouldn't have to open up another tab.
-
-### Metrics
-
-However, the difficulty with the Looker is that it was hard to tell the numerical changes for each automation.
-
-![image](/buzzfeed/Untitled%2010.png)
-
-After talking with engineers and presenting different statistical options, I learned that the only feasible ones would be the **volume published** (for publishing) and also the number used out of **total recommended** (for recommendations). I also decided that the "percent changes", although a valid indicator of a positive or negative change - would need more data and testing to indicate whether or not an actual investigable change had occurred or if it was just within the flux of current events.
-
-## User Reactions from User Testing
-
-When testing this feature - we found that 5/5 users had positive responses to all three options - in fact, many expressed they would use each metric for difference purposes.
-
-> “The metrics preview is good to keep an eye on pages that are 100% automated and quick changes. With the graphs, I want my team to keep an eye on pages we aren’t actively scheduling to. Finally, I like the past history because it makes retros easier.” - Cathy Ngo, Head of Social Strategy -->
-
 # Solution Overview
 
 I ended up with positive feedback not only from the social media publishers on Buzzfeed, but also the Director of Social Media Strategy herself approved of the designs and agreed with the value-add of the product. I also designed future state ideas beyond the MVP that focused on understanding the success of different automations that also received positive feedback from product.
@@ -186,8 +130,6 @@ I would measure the success of this feature by qualitatively noting any changes 
 **Validate with limited testing** - I learned how to formulate hypothesis and different decision frameworks to predict which designs would work best for users.
 
 **Exercise product-thinking early** - My first project was a notifications project, however I was able to quickly scope out the project and determine for the engineering capacity given, it would be better to use a free out-of-box alternative.
-
-<!-- ![image](/buzzfeed/announcements.png) -->
 
 # Extra
 
