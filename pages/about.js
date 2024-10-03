@@ -13,6 +13,7 @@ export default function About() {
       <Head>
         <title>About Me</title>
       </Head>
+      <div className="animate-text delay-1">
       <div className={styles.profile}>
         <div className={styles.row}>
           <Image
@@ -20,6 +21,7 @@ export default function About() {
             height={321} // Desired size with correct aspect ratio
             width={220} // Desired size with correct aspect ratio
             alt="profile"
+            style={{margin: "0px"}}
           />
           <div className={utilstyles.width550}>
             <h1 className={utilstyles.margin0}>❀ Hi, I'm Connie!</h1>
@@ -54,6 +56,8 @@ export default function About() {
               </a>
             </p>
           </div>
+          </div>
+
         </div>
       </div>
       {/* <div className={utilstyles.galleryrow}>

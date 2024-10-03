@@ -1,6 +1,9 @@
 .colorInherit {
   color: inherit;
 }
+.row .width550 img{
+  border-radius: 16px;
+}
 .width370{
   width:350px;
 }

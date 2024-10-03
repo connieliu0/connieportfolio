@@ -14,6 +14,7 @@ const components = { Section, Row }
 export default function Post({ source, frontMatter }) {
   return (
     <div>
+      <div className={"animate-text delay-1"}>
        <Header
         title={frontMatter.title}
         context={frontMatter.context}
@@ -21,6 +22,8 @@ export default function Post({ source, frontMatter }) {
         role={frontMatter.role}
         time={frontMatter.time}
       />
+      </div>
+      <div className={"animate-text delay-2"}>
       <Layout>
       <MDXRemote {...source} components={components} />
       </Layout>
@@ -33,6 +36,7 @@ export default function Post({ source, frontMatter }) {
             <h2>Next Project →</h2>
           </Link>
         )}
+        </div>
       </div>
     </div>
   )
