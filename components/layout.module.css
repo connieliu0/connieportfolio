@@ -7,9 +7,6 @@
 .layout main h2{
   margin-top: 2em
 }
-.layout main h3{
-  margin-top: 1.75em
-}
 
 .exp h5{
   font-size:1em;
@@ -152,4 +149,17 @@ margin-left: 24px;
   .row{
     flex-direction:column
   }
+}
+
+.width550 {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.width550 img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* This sets a consistent aspect ratio */
+  object-fit: cover;
 }

@@ -1,7 +1,7 @@
 .colorInherit {
   color: inherit;
 }
-.row .width550 img{
+.row .width450 img{
   border-radius: 16px;
 }
 .width370{
@@ -9,10 +9,21 @@
 }
 .width370 em{
   margin-top: 0px;
+}
+#global em{
   font-size: 1.3em;
 }
-.width550 {
-  max-width:490px;
+.width450 {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+body div.width450 img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 14 / 9 !important;  /* Adjust this ratio as needed */
+  object-fit: cover !important;
+  object-position: top center !important;
 }
 .width425 {
   width:800px;

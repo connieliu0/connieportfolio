@@ -42,7 +42,7 @@ export default function Researchcode() {
           name="“Fact-checks are for the Top 0.1%”: Examining Reach,
           Awareness, and Relevance of Fact-Checking in Rural India"
           subtitle="2022, Published in ACM CSCW"
-          link="https://drive.google.com/file/d/1WHGkG2l7mKBCkYRjdxcuEtkZRm5Z2Kwk/view"
+          link="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view"
         />
         <Research
           name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
@@ -82,10 +82,6 @@ export default function Researchcode() {
             target="_blank"
           >
             Google Summer of Code Article
-          </a>
-          ,{" "}
-          <a href="https://old.connie-liu.me/" target="_blank">
-            old portfolio (2019-2022)
           </a>
       </p>
       </div>

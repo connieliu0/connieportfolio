@@ -21,9 +21,13 @@ export default function About() {
             height={321} // Desired size with correct aspect ratio
             width={220} // Desired size with correct aspect ratio
             alt="profile"
-            style={{margin: "0px"}}
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center top',
+              margin: "0px"
+            }}
           />
-          <div className={utilstyles.width550}>
+          <div className={utilstyles.width450}>
             <h1 className={utilstyles.margin0}>❀ Hi, I'm Connie!</h1>
             <p>
               <em>
@@ -32,21 +36,17 @@ export default function About() {
             </p>
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (I made this website!). Currently, I'm working on <a href="https://www.atlassian.com/platform/analytics/what-is-atlassian-analytics">Atlassian Analytics</a> and admin experiences; previously I was at Scale AI, NYTimes, and BuzzFeed. 
+              design, research, and code (I made this website!). Currently, I'm on <a href="https://www.atlassian.com/platform/analytics/what-is-atlassian-analytics">Atlassian Analytics</a> and admin experiences; previously I was at Scale AI, NYTimes, and BuzzFeed. 
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
-              public benefit. Recently, I published a paper to CSCW researching{" "}
-              <a href="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view">
-                fact-checking in rural India
-              </a>
-              . I also currently serve as Creative Director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
+              public benefit and have published research to ACM CSCW and COMPASS. Currently I serve as Creative Director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
             </p>
             <p>
-              Previously, I got a degree in Data and Computer Science at Cornell, where I
-              founded the design team at
-              <a href="https://www.cornellh4i.org/"> Hack4Impact</a> and
-              co-founded an open access{" "}
+              Previously, I got a degree in Data, User Experience, and Computer Science at Cornell, where I
+              founded the
+              <a href="https://www.cornellh4i.org/"> Hack4Impact</a> design team and
+              an open access{" "}
               <a href="https://bit.ly/CUxD">UX Design club</a>. Before that, I grew up in Pennsylvania, where I originally wanted to be an environmental scientist - a part of me is still tinkering about the  <a href="https://www.are.na/connie-liu-kg4ypfp7ry0/organic-web">organic web</a>.
             </p>
             <p>
