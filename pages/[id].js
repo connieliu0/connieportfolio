@@ -29,11 +29,11 @@ export default function Post({ source, frontMatter }) {
       </Layout>
       <div className={utilStyles.galleryrow}>
         <Link href="/">
-          <h2>← Back to home</h2>
+          <h3>← Back to home</h3>
         </Link>
         {frontMatter.next.length !== 0 && (
           <Link href={frontMatter.next}>
-            <h2>Next Project →</h2>
+            <h3>Next Project →</h3>
           </Link>
         )}
         </div>
