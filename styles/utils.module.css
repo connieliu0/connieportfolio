@@ -32,6 +32,9 @@ body div.width450 img {
 }
 .width425 img{
   max-width:370px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .width425 em p{
   margin-top: 0em;
@@ -166,6 +169,9 @@ margin-bottom:24px;
     width: 100%;
     flex-direction: column;
     gap: 0px;
+  }
+  .width425 img{
+    max-width:370px;
   }
   .width425 h4{
     width: 100%;
