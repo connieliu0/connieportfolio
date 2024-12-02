@@ -5,23 +5,8 @@
       "desc": "National Silver Medal"
     },
     {
-      "name": "hill1.png"
-    },
-    {
-      "name": "life.jpg"
-    },
-    {
       "name": "p2.jpg",
       "desc": "Top 2% of submissions"
-    },
-    {
-      "name": "worm.PNG"
-    },
-    {
-      "name": "hill2.png"
-    },
-    {
-      "name": "rain.jpg"
     },
     {
       "name": "p3.jpg",
@@ -30,6 +15,22 @@
     {
       "name": "searching.png"
     },
+    {
+      "name": "burninghill.png"
+    },
+    {
+      "name": "life.jpg"
+    },
+    {
+      "name": "rain.jpg"
+    },
+    {
+      "name": "hill2.png"
+    },
+    {
+      "name": "worm.png"
+    },
+
     {
       "name": "Stumbleupon.png"
     }
