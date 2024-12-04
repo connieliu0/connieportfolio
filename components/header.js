@@ -13,6 +13,6 @@ export default function Header(props) {
           </h2>
         </div>
       </div>
-    </div>
+      </div>
   );
 }

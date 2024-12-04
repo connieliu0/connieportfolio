@@ -14,7 +14,9 @@ const components = { Section, Row }
 export default function Post({ source, frontMatter }) {
   return (
     <div>
+      <br/>
       <div className={"animate-text delay-1"}>
+      <div className="header">
        <Header
         title={frontMatter.title}
         context={frontMatter.context}
@@ -22,6 +24,7 @@ export default function Post({ source, frontMatter }) {
         role={frontMatter.role}
         time={frontMatter.time}
       />
+      </div>
       </div>
       <div className={"animate-text delay-2"}>
       <Layout>
