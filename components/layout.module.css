@@ -141,6 +141,10 @@ margin-left: 24px;
 }
 /* styles */
 @media (max-width: 900px) {
+  .profile .row{
+    gap: 36px;
+  }
+
   .headerrow{
     flex-direction:column;
     align-items:flex-start;
