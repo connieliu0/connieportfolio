@@ -36,7 +36,7 @@ export default function About() {
             </p>
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (I made this website!). Currently, I'm on <a href="https://www.atlassian.com/platform/analytics/what-is-atlassian-analytics">Atlassian Analytics</a> and admin experiences; previously I was at Scale AI, NYTimes, and BuzzFeed. 
+              design, research, and code (I made this website!). Currently, I'm on <a href="https://www.atlassian.com/platform/analytics/what-is-atlassian-analytics">Atlassian Analytics</a> and admin experiences; previously I designed at Scale AI, Kleiner Perkins Fellows, NYTimes, BuzzFeed, and contributed to open source via Google Summer of Code. 
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
