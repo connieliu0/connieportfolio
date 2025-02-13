@@ -8,10 +8,19 @@ import Header from "../components/header.js";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import  Row  from '../components/row.js'
-
+import { parseCookies } from 'nookies'
+import React from 'react'
+import PasswordPromptDialog from '../components/password.js'
 const components = { Section, Row }
 
-export default function Post({ source, frontMatter }) {
+export default function Post({ source, frontMatter, isLoggedIn }) {
+  // Add client-side authentication check
+  const [authenticated, setAuthenticated] = React.useState(isLoggedIn)
+
+  if (!authenticated) {
+    return <PasswordPromptDialog onSubmit={() => setAuthenticated(true)} />
+  }
+
   return (
     <div>
       <br/>
@@ -55,7 +64,16 @@ export async function getStaticProps({ params }) {
       rehypePlugins: [],
     },
   })
-  return { props: { source: mdxSource, frontMatter: postData } }
+
+  // For static pages, we'll pass a default isLoggedIn value
+  // The actual authentication will happen client-side
+  return { 
+    props: { 
+      source: mdxSource, 
+      frontMatter: postData,
+      isLoggedIn: false // Default to false, will be checked client-side
+    } 
+  }
 }
 
 export async function getStaticPaths() {
