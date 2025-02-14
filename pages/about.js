@@ -31,7 +31,7 @@ export default function About() {
             <h1 className={utilstyles.margin0}>❀ Hi, I'm Connie!</h1>
             <p>
               <em>
-                On a mission to design sustainable systems to empower the world.
+                On a mission to design systems to empower the world.
               </em>
             </p>
             <p>
