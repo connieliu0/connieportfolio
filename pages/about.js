@@ -81,14 +81,8 @@ export default function About() {
         <div className={utilstyles.width275}>
           <h2>✎ </h2>
           <p>
-            Doodling for my{" "}
-            <a href="https://www.instagram.com/conliuart/">art blog</a>, reading
-            and drawing <a href="https://www.tiktok.com/@conliuart/">comics</a>.
-            I once had a{" "}
-            <a href="https://www.webtoons.com/en/challenge/paper-planes/chapter-one/viewer?title_no=38596&episode_no=2">
-              webcomic
-            </a>{" "}
-            with 18k views!
+            Creating poetic {" "}
+            <a href="https://www.connie.surf" target="_blank">comcis, websites, and illustrations</a>
           </p>
         </div>
         <div className={utilstyles.width275}>
@@ -98,7 +92,7 @@ export default function About() {
         <div className={utilstyles.width275}>
           <h2>✉ </h2>
           <p>
-            The poem Leaves by Lloyd Schwartz and indie music, especially Mitski
+            The poem <a href="https://poets.org/poem/leaves-0" target="_blank">Leaves</a> by Lloyd Schwartz and Mitski's songs
           </p>
         </div>
       </div>
