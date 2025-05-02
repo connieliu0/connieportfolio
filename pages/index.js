@@ -59,7 +59,7 @@ export default function Home({ allPostsData }) {
       <div className="animate-text delay-2">
         <Section name="FEATURED PROJECTS" />
         <div className={styles.galleryrow}>
-          {allPostsData.slice(0,2).map(({ id, title, pic, type, role }) => (
+          {allPostsData.slice(0,4).map(({ id, title, pic, type, role }) => (
             <Card pic={pic} title={title} link={id} type={type} role={role} />
           ))}
         </div>
@@ -67,7 +67,7 @@ export default function Home({ allPostsData }) {
         <br/>
         <Section name="MORE PROJECTS" />
         <div className={styles.galleryrow}>
-          {allPostsData.slice(2).map(({ id, title, pic, type, role }) => (
+          {allPostsData.slice(4).map(({ id, title, pic, type, role }) => (
             <Card pic={pic} title={title} link={id} type={type} role={role} />
           ))}
         </div>
