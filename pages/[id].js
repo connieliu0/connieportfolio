@@ -38,7 +38,7 @@ export default function Post({ source, frontMatter }) {
       <Layout>
       <MDXRemote {...source} components={components} />
       </Layout>
-      <div className={utilStyles.galleryrow}>
+      <div className={utilStyles.galleryrow} style={{maxWidth: '600px', justifyContent: 'space-between', marginLeft: 'auto', marginRight: 'auto'}}>
         <Link href="/">
           <h3>← Back to home</h3>
         </Link>
