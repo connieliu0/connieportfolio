@@ -57,6 +57,11 @@ h3{
 h4{
   font-family: 'Lora', serif;
 }
+p > img {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+}
 h6{
   font-size: 1em;
   font-weight: 400;
@@ -127,4 +132,3 @@ button:hover{
   padding-right: 0 auto;
 }
 }
-

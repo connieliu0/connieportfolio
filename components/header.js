@@ -9,7 +9,7 @@ export default function Header(props) {
         <div className={styles.headerrow}>
           <h1>{props.title}</h1>
           <h2>
-            {props.context} • {props.time}{" "}
+            {props.context}
           </h2>
         </div>
       </div>

@@ -7,7 +7,14 @@
 .width370{
   width:350px;
 }
+.width370 p{
+  font-family: 'DM Sans', sans-serif;
+}
 .width370 em{
+  margin-top: 0px;
+}
+.width370 h4{
+  margin-bottom: 0px;
   margin-top: 0px;
 }
 #global em{
@@ -96,13 +103,15 @@ body div.width450 img {
   height: 1400px;
 }
 .galleryrow{
-  width:100%;
-  flex-wrap: wrap;
+  justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;  
+    flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   display: flex;
   flex-direction: row;
-  gap: 50px;
 }
 
 .galleryrow a img:hover{
@@ -159,7 +168,18 @@ margin-top: 64px;
 margin-bottom:24px;
 }
 
-
+/* Limit max-width for text not inside .row */
+main p:not(.row p):not(img),
+main h1:not(.row h1),
+main h2:not(.row h2),
+main h3:not(.row h3),
+main h4:not(.row h4),
+main h5:not(.row h5),
+body h6:not(.row h6) {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* responsive row */
 @media (max-width: 900px) {
   .width360 {
@@ -192,7 +212,6 @@ margin-bottom:24px;
     flex-direction:row;
     align-items: center;
     gap: 30px;
-
   }
   .navcontainer{
     flex-direction: column;

@@ -7,8 +7,27 @@ import utilstyles from "../styles/utils.module.css";
 import styles from "../components/layout.module.css";
 
 import SmallCard from "../components/smallcard";
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Researchcode() {
+export async function getStaticProps() {
+  try {
+    const allPostsData = await getSortedPostsData('research');
+    return {
+      props: {
+        allPostsData,
+      },
+    };
+  } catch (error) {
+    console.error('Error in getStaticProps:', error);
+    return {
+      props: {
+        allPostsData: [],
+      },
+    };
+  }
+}
+
+export default function Researchcode({ allPostsData }) {
   return (
     <>
       <Head>
@@ -36,7 +55,13 @@ export default function Researchcode() {
         />{" "}
       </div>
       <div class="animate-text delay-2">
-      <Section name="RESEARCH PAPERS" />
+      <Section name="RESEARCH ON AI-FUTURES" />
+      <div className={styles.galleryrow}>
+          {allPostsData.slice(0,2).map(({ id, title, subtitle }) => (
+            <Research name={title} subtitle={subtitle} link={id} />
+          ))}
+        </div>
+      <Section name="RESEARCH ON ICT4D" />
       <div className={utilstyles.galleryrow}>
         <Research
           name="“Fact-checks are for the Top 0.1%”: Examining Reach,

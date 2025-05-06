@@ -54,7 +54,21 @@ export default function Post({ source, frontMatter }) {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const { id } = params
+
+  // Try to load from case-studies first, then research
+  let postData
+  try {
+    postData = await getPostData(id, 'case')
+  } catch (e1) {
+    try {
+      postData = await getPostData(id, 'research')
+    } catch (e2) {
+      // Not found in either
+      return { notFound: true }
+    }
+  }
+
   const mdxSource = await serialize(postData.content, {
     // MDX's available options, on https://github.com/hashicorp/next-mdx-remote#options
     scope: postData,
@@ -74,9 +88,12 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = await getAllPostIds()
+  const caseIds = await getAllPostIds('case')
+  const researchIds = await getAllPostIds('research')
+  // Combine and deduplicate if necessary
+  const allIds = [...caseIds, ...researchIds]
   return {
-    paths,
+    paths: allIds,
     fallback: false
   }
 }

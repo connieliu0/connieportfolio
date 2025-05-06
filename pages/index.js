@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export async function getStaticProps() {
   try {
-    const allPostsData = await getSortedPostsData();
+    const allPostsData = await getSortedPostsData('case');
     return {
       props: {
         allPostsData,
