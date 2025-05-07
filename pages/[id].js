@@ -8,10 +8,12 @@ import Header from "../components/header.js";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import  Row  from '../components/row.js'
+import TwitterCard from '../components/twitter.js'
+import remarkGfm from 'remark-gfm'
 // import { parseCookies } from 'nookies'
 // import React from 'react'
 // import PasswordPromptDialog from '../components/password.js'
-const components = { Section, Row }
+const components = { Section, Row, TwitterCard }
 
 export default function Post({ source, frontMatter }) {
   // Comment out authentication check
@@ -73,7 +75,7 @@ export async function getStaticProps({ params }) {
     // MDX's available options, on https://github.com/hashicorp/next-mdx-remote#options
     scope: postData,
     mdxOptions: {
-      remarkPlugins: [],
+      remarkPlugins: [remarkGfm],
       rehypePlugins: [],
     },
   })

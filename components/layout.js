@@ -5,11 +5,19 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Three from "./three.js";
 import { MDXProvider } from "@mdx-js/react";
+import SmoothScroll from './smooth-scroll'
+import Footnotes from './footnotes';
 
 export default function Layout({ children, home }, props) {
   return (
     <MDXProvider components={{ Three }}>
+      <SmoothScroll />
+      <Footnotes />
       <div className={styles.layout}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta name="description" content="Connie Liu's Portfolio" />
+        </Head>
         <main>{children}</main>
       </div>
     </MDXProvider>

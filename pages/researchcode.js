@@ -56,9 +56,9 @@ export default function Researchcode({ allPostsData }) {
       </div>
       <div class="animate-text delay-2">
       <Section name="RESEARCH ON AI-FUTURES" />
-      <div className={styles.galleryrow}>
-          {allPostsData.slice(0,2).map(({ id, title, subtitle }) => (
-            <Research name={title} subtitle={subtitle} link={id} />
+      <div className={utilstyles.galleryrow}>
+          {allPostsData.slice(0,2).map(({ id, title, type, date }) => (
+            <Research name={title} subtitle={type} time={date} link={id} />
           ))}
         </div>
       <Section name="RESEARCH ON ICT4D" />

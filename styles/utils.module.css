@@ -220,3 +220,66 @@ body h6:not(.row h6) {
   }
 
 }
+
+.twitterCard {
+  width: 100%;
+  max-width: 550px;
+  margin: 1rem auto;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Ensure the Twitter embed stays within bounds */
+.twitterCard iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure the blockquote stays within bounds */
+.twitterCard blockquote {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Footnote styles */
+.footnotes {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.footnotesList {
+  padding-left: 1.5rem;
+}
+
+.footnoteItem {
+  margin-bottom: 0.5rem;
+}
+
+.footnoteLink {
+  text-decoration: none;
+}
+
+.footnoteLink:hover {
+  text-decoration: underline;
+}
+
+.footnoteRef {
+  font-size: 0.8em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.footnoteBackLink {
+  font-size: 0.8em;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.footnoteBackLink:hover {
+  text-decoration: underline;
+}

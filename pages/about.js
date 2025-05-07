@@ -6,7 +6,7 @@ import ExpSmall from "../components/expsmall.js";
 import styles from "../components/layout.module.css";
 import utilstyles from "../styles/utils.module.css";
 import Section from "../components/section";
-
+import TwitterCard from "../components/twitter";
 export default function About() {
   return (
     <>
@@ -82,7 +82,7 @@ export default function About() {
           <h2>✎ </h2>
           <p>
             Creating poetic {" "}
-            <a href="https://www.connie.surf" target="_blank">comcis, websites, and illustrations</a>
+            <a href="https://www.connie.surf" target="_blank">comics, websites, and illustrations</a>
           </p>
         </div>
         <div className={utilstyles.width275}>
@@ -92,7 +92,7 @@ export default function About() {
         <div className={utilstyles.width275}>
           <h2>✉ </h2>
           <p>
-            The poem <a href="https://poets.org/poem/leaves-0" target="_blank">Leaves</a> by Lloyd Schwartz and Mitski's songs
+            The poem <a href="https://poets.org/poem/leaves-0" target="_blank">Leaves</a> by Lloyd Schwartz and Mitski songs
           </p>
         </div>
       </div>

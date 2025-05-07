@@ -1,0 +1,56 @@
+import TwitterCard from './components/twitter';
+
+export const meta = {
+    title: "Where will AI live in the design process?",
+    date: "May 2025",
+    type: "2025, self-published",
+    next: "",
+    header: "",
+    role: "",
+    context: ""
+}
+
+Recently at work I’ve been playing around with using AI to prototype in code. I had tried a slew of prototyping tools before - Origami, Protopie, you name it - yet nothing beat the speed I felt in code. Perhaps it was because I was already familiar with frontend frameworks, but the mental model clicked quickly, all I had to do was specify the component and the effects I wanted to occur to them.
+
+But, where did AI really fit in the design process? With current AI-driven prototyping tools (and in general), a large limitation is it becomes out of sync with a company’s design system. But what if it was integrated, and AI had access to those primitives? Assuming the design components specified in Figma can translate directly to production-level code, here are some ideas:
+
+## Bluesky ideation
+
+### Execution
+
+Oftentimes the ideation phase begins off as sketching, although many companies have high fidelity components it can be too easy to fall into the trap of making sure the frames are pixel perfect instead of evaluating the idea of what you’re really making. But conveying an idea through a messy sketch can also be difficult to explain to stakeholders. I can see a world where AI can recognize and swap out primitives with design system components.
+
+<TwitterCard url= "https://twitter.com/tldraw/status/1724892287304646868"/>
+
+### Generation
+
+Although, I’m not sure if AI should replace general generative thinking. The designer is the one who knows all the context on the problem, and the effort to provide the context to the LLM could be resource heavy. Generally though, I often ideate on an axis, and wonder if we could use AI to automate the generation or sorting of ideas amongst that axis
+
+![A general design thinking axis](research/axis.png)
+
+## Refinement
+
+### Executing on edge states
+
+Once you have an idea, you must construct the system to build it. Doing so can be a labor intensive tasks, as there are a large number of edge states depending on the variables. Figma had already begun abstracting some of it out with variables and components.
+
+I see a future where the user creates a functional prototype with a combination of AI-assisted coding and abstraction instead of purely prototyping a happy path. Although I personally think an interface layer to control parts of the prototyping process is necessary, the user could describe with plaintext how different components relate to each other (see more here).
+![image.png](research/data.png)
+
+Then Figma lays out each state of the prototype for a systems level view as an artifact for easy discussion.
+![image.png](research/statemap.png)
+
+
+Even better beyond automated visual representations is if the designer can handoff not only the component code, but also these linkages between components to the engineer!
+
+### Generating motion
+
+One of the design details often not caught in Figma is motion. One idea I had was to be able to describe several motion triggers in Figma and use code to animate them for handoff to developers. Motion is one of those things that is hard to sketch out statically, so I can see a process where AI can use code as a primitive to generate several motion options which users can then further modify through variables (length, easing etc). This is similar to the state management idea, except on a more detailed level with motion frameworks.
+
+## Dependencies
+
+When I think about integrating with AI technologies, two issues come to mind - determinism and context. With a lack of data on a company’s design system and pre-existing patterns, the ability of AI to correctly execute on an ask with little context becomes low.
+
+I’m more optimistic about AI-driven design ideas that require less ambiguous context and generation. I see a future with AI can handle the execution part of design well, whether it be swapping out components or mapping out edge states.
+
+In the state of AI tools as of April 2025, it only makes sense as a way to demonstrate and catch edge states for interfaces that require dynamic input and output as well as microinteractions. For other purposes of design, especially communicating flows on a systems level, the tooling is not there yet.
