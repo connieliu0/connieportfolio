@@ -9,11 +9,15 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import  Row  from '../components/row.js'
 import TwitterCard from '../components/twitter.js'
+import Caption from '../components/caption.js'
+import MDXWrapper from '../components/mdx-wrapper.js'
+import MDXImage from '../components/mdx-image.js'
+import Divider from '../components/divider.js'
 import remarkGfm from 'remark-gfm'
 // import { parseCookies } from 'nookies'
 // import React from 'react'
 // import PasswordPromptDialog from '../components/password.js'
-const components = { Section, Row, TwitterCard }
+const components = { Section, Row, TwitterCard, Caption, wrapper: MDXWrapper, img: MDXImage, hr: Divider }
 
 export default function Post({ source, frontMatter }) {
   // Comment out authentication check
@@ -38,7 +42,9 @@ export default function Post({ source, frontMatter }) {
       </div>
       <div className={"animate-text delay-2"}>
       <Layout>
-      <MDXRemote {...source} components={components} />
+        <MDXWrapper>
+          <MDXRemote {...source} components={components} />
+        </MDXWrapper>
       </Layout>
       <div className={utilStyles.galleryrow} style={{maxWidth: '600px', justifyContent: 'space-between', marginLeft: 'auto', marginRight: 'auto'}}>
         <Link href="/">

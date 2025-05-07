@@ -167,7 +167,7 @@ margin-bottom:24px;
 }
 
 /* Limit max-width for text not inside .row */
-main p:not(.row p):not(img),
+main p:not(.row p):not(li p):not(img),
 main h1:not(.row h1),
 main h2:not(.row h2),
 main h3:not(.row h3),
@@ -178,6 +178,13 @@ body h6:not(.row h6) {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Prevent clicking on images in main content */
+.noClickImage img {
+  pointer-events: none;
+  user-select: none;
+}
+
 /* responsive row */
 @media (max-width: 900px) {
   .width360 {
@@ -250,14 +257,21 @@ body h6:not(.row h6) {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #eee;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .footnotesList {
   padding-left: 1.5rem;
+  width: 100%;
 }
 
 .footnoteItem {
   margin-bottom: 0.5rem;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .footnoteLink {
@@ -282,4 +296,22 @@ body h6:not(.row h6) {
 
 .footnoteBackLink:hover {
   text-decoration: underline;
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+  margin: 0.5rem auto 2rem;
+  max-width: 600px;
+  font-style: italic;
+}
+
+/* Style for horizontal rules */
+.contentDivider {
+  max-width: 600px;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid #eaeaea;
 }

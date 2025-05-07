@@ -1,4 +1,6 @@
-import from './components/twitter';
+import TwitterCard from './components/twitter';
+import Caption from '../components/caption'
+
 export const meta = {
     title: "Vibe-coding limits a creator’s potential",
     date: "May 2025",
@@ -8,33 +10,34 @@ export const meta = {
     role: "",
     context: ""
 }
-*This is an adaption from this [substack article](https://corny.substack.com/p/vibe-coding-limits-a-creators-potential) that I wrote that I'm in the process of converting to .mdx*
 
 Earlier this year the phrase “vibe coding” was coined to describe using purely conversational chat to code with AI. It had felt like a new world was unlocked - a world in which the user did not need to understand the codebase of what they were building. Building an app was no longer a miracle, but a common occurrence - a full stack app that would have taken a month built in ten minutes! In this fable of the turtle and the hare, it seemed like the hare always won.
 
 ## Why does it feel cheap?
 
-However, it's one thing to make something quickly that works and another to make a truly great piece of software. Under the pressure of running out of tokens, users are expected to one-shot prompts - but novel software creation is not a process that can be done in a single paragraph of text, it **requires constant iteration**. AI tools are not infallible, as you construct your software house through pure vibes instead of understanding, you’re essentially creating a roof with holes. Suddenly, edge states don’t work, the interface breaks on small screens, and random components have extra spacing[^1].
-
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17264258-9ca7-43bc-87c9-f3c2c615651f_2550x1152.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17264258-9ca7-43bc-87c9-f3c2c615651f_2550x1152.png)The tools used can be derived from the style - https://www.are.na/block/34389557, https://x.com/gucaslelfond/status/1914414201243947054
+However, it's one thing to make something quickly that works and another to make a truly great piece of software. Under the pressure of running out of tokens, users are expected to one-shot prompts - but novel software creation is not a process that can be done in a single paragraph of text, it **requires constant iteration**. AI tools are not infallible, as you construct your software house through pure vibes instead of understanding, you’re essentially creating a roof with holes. Suddenly, edge states don’t work, the interface breaks on small screens, and random components have extra spacing[^1]. As a result, the open source design system, although a major evolution in accessibility and usability from years ago, becomes equated with cheapness.[^2]
+[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17264258-9ca7-43bc-87c9-f3c2c615651f_2550x1152.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17264258-9ca7-43bc-87c9-f3c2c615651f_2550x1152.png)
+<Caption>The tools used can be derived from the style - <a href = "https://x.com/gucaslelfond/status/1914414201243947054" target="_blank">source</a></Caption>
 
 ## The downsides of ultimate flexibility
 
 AI-powered tooling with chat as the sole input makes it difficult to scale complex software, but why? Because users are able to describe whatever they want, chat paradoxically sets users free from the limits of the tooling interface, yet limits them because of the same reason. Optimizing for chat **does not free an interface from itself** , and just as you can tell when something is made with Squarespace - you can tell when something was made with just AI prompting. Because there are no guardrails, the limit is the user’s own knowledge and so people fail in the same ways again and again.
 
-That being said, I’m not arguing to go back entirely to the days of prototyping tools. What I appreciate about the AI-powered prototyping **is the flexibility** because it’s centered around a true primitive - **the code itself.** I believe we can leverage the benefits of AI to make beautiful software creation accessible while giving choice back to the user. So how do we do it?
+That being said, I’m not arguing to go back entirely to the days of prototyping tools. What I appreciate about the AI-powered prototyping **is the flexibility** because it’s centered around a true primitive - **the code itself.** I believe we can leverage the benefits of AI to make beautiful software creation accessible while giving choice back [^3]. So how do we do it?
 
 ## Have an opinion on the best way to create software and embed in those principles
 
 Building is complex. Before AI, oftentimes to raise the ceiling, you had to raise the floor. Tooling would have a high learning curve that, when unlocked, would have incredible benefits. However conversely a lack of any opinion at all **shapes an outcome** \- which is not only poorly designed software but also someone who grows frustrated that **the house they have created is fallible.**
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83b921bf-e987-4e1f-bf49-a5e9579c984b_940x326.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83b921bf-e987-4e1f-bf49-a5e9579c984b_940x326.png) While users familiar with code have a great time with prompting, those do not will fall into holes of their digging
+[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83b921bf-e987-4e1f-bf49-a5e9579c984b_940x326.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83b921bf-e987-4e1f-bf49-a5e9579c984b_940x326.png) 
+<Caption>While users familiar with code have a great time with prompting, those do not will fall into holes of their digging</Caption>
 
-It is possible to have extremely flexible software but still with strong principles. For example, Figma is an abstraction layer on top of a blank canvas - but its many principles like frames, components, and autolayout go beyond interface design to slide and graphic design as well[5](https://corny.substack.com/p/vibe-coding-limits-a-creators-potential#footnote-5-163034537).
+It is possible to have extremely flexible software but still with strong principles. For example, Figma is an abstraction layer on top of a blank canvas - but its many principles like frames, components, and autolayout go beyond interface design to slide and graphic design as well.
 
 An easy solution if we were to continue entirely on a chat-based paradigm is to instill better defaults in system prompts to ensure specificity and reduce error, prompting the user if they have not provided enough detail.
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5676a31-bf3e-467b-872c-b90e6cc9439d_1426x442.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5676a31-bf3e-467b-872c-b90e6cc9439d_1426x442.png)This popular cursor rules file has specific defaults to implement software testing principles into the code
+[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5676a31-bf3e-467b-872c-b90e6cc9439d_1426x442.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5676a31-bf3e-467b-872c-b90e6cc9439d_1426x442.png)
+<Caption>This popular <a href="https://gist.github.com/aashari/07cc9c1b6c0debbeb4f4d94a3a81339e" target="_blank">cursor rules</a> file has specific defaults to implement software testing principles into the code</Caption>
 
 But, is there still an interaction paradigm beyond chat that is malleable but principled?
 
@@ -46,7 +49,8 @@ The current process for vibe coding with AI for nontechnical users (think produc
 
 As a result, people rely solely through chat to iterate which can lead to problems like breaking the flow state waiting for things to load, relying on [chat](https://julian.digital/2025/03/27/the-case-against-conversational-interfaces/) for inherently visual iterative processes, and [forgetting what had already occurred](https://danieldelaney.net/chat/).
 
-[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d97c7b8-2bb5-4562-a3f1-1c2631d34ac9_1444x796.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d97c7b8-2bb5-4562-a3f1-1c2631d34ac9_1444x796.png)right: losing flow state left: websim is mostly chatbased
+[![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d97c7b8-2bb5-4562-a3f1-1c2631d34ac9_1444x796.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d97c7b8-2bb5-4562-a3f1-1c2631d34ac9_1444x796.png)
+<Caption>right: losing flow state left: websim is mostly chatbased</Caption>
 
 From my own experiences creating personal software and talking with friends the generative process of making software that consists of two iteration cycles, in which it’s best practice to iterate on each separately - first making sure the structure works before applying visual fixes. To that end - **new interfaces should make it easy to iterate in these two cycles at different levels of abstraction.**
 
@@ -62,9 +66,9 @@ Right now, many gen-AI coding platforms pigeon the user into relying completely 
 
 Additionally, showing the user how to understand the “manual way” provides insight on how to read code and allows them more power to recognize and make the smaller decisions that allows craft and intent to shine, instead of entrusting everything to the AI.
 
-#### How do we empower users to move up and down the ladder?
+### How do we empower users to move up and down the ladder?
 
-One problem with prior complex tools is that a specific task would be buried behind several dropdowns.[6](https://corny.substack.com/p/vibe-coding-limits-a-creators-potential#footnote-6-163034537) Many companies have experimented with AI not to replace the current UI, but rather as a guide to show how to use the AI. At Ramp, the [AI agent clicks through the UI](https://x.com/tryramp/status/1792659194996281478), while for Stitch, a new node-based visual programming prototyping tool similar to Origami - [AI is used to create the abstracted primitive building block](https://stitchdesign.app/)s (video below).
+One problem with prior complex tools is that a specific task would be buried behind several dropdowns. Many companies have experimented with AI not to replace the current UI, but rather as a guide to show how to use the AI. At Ramp, the [AI agent clicks through the UI](https://x.com/tryramp/status/1792659194996281478), while for Stitch, a new node-based visual programming prototyping tool similar to Origami - [AI is used to create the abstracted primitive building block](https://stitchdesign.app/)s (video below).
 
 <TwitterCard url = "https://twitter.com/adammenges/status/1919406032281092118"/>
 
@@ -83,6 +87,7 @@ The prototype above is for a simple javascript page, and there is much more to e
 There are already many good intermediaries between pure CSS and the output - Chrome Devtools inspector allows you to modify properties to see changes lives and Figma’s primitives are mapped exactly to CSS (making it easy to create accurate code snippets without any AI). Although there could be many layers of abstraction for the different variables (and certainly better ways to interact with them), again we are illustrating the relation between the code and the output. This is very similar to the principles in Bret Victor’s Learnable programming (link [here](https://worrydream.com/LearnableProgramming/)).
 ![image.png](research/visual.gif)
 
+
 ### Implications for the future
 
 All this to say, AI-assisted coding has changed my life. My foray into web development came from coding my portfolio from scratch every year and even though straightforward, adding more complex features like locked pages were insurmountable when I ran into random package bugs. I would comb over stackoverflow and github forums for hours until 2am to make no progress. Beyond resolving bugs, it also helped me understand motion libraries and connecting to a backend. However, there’s a difference between using it as an intermediary to understanding versus giving up on understanding entirely.
@@ -93,11 +98,13 @@ The second part is making computing more accessible to everyone leads to a democ
 
 Making self-expressive software relies on understanding what you’re building and allowing as much personal decision making as possible. Pure chat is not a primitive for building a system - you need more ways to look at an object than just in one dimension.
 
+*if you're interested, this piece also exists on my [substack](https://corny.substack.com/p/vibe-coding-limits-a-creators-potential)*
+
 * * *
 Side notes - this topic has been ruminating in my mind a bit, I had previously written my [thoughts](https://corny.substack.com/p/on-generated-images) on genAI for images and how it lifted decisions from the creator - I wondered how those metaphors extended to AI-generated coding. Coding can be intimidating and not immediately intuitive, so I hope to see a future where AI can be used to progressively help the user play and understand with this medium.
 Note of thanks to Justin for sharing Bret Victor’s articles with me!
 
-[^1]: That being said - one could say who cares if it works? In the Crystal Goblet, a pivotal graphic design text - Beatrice Wade argues that the most beautiful wine glass is not the ornate one, but the transparent one - it is the one that allows the true intention of the design to shine. Just as it is important to abide towards great graphic design principles to make a work shine, random UI bugs distract from the meaning of software.
+[^1]: That being said - one could say who cares if it works? In the Crystal Goblet, a pivotal graphic design text - Beatrice Wade argues that the most beautiful wine glass is not the ornate one, but the transparent one - it is the one that allows the true intention of the design to shine - random UI bugs distract from the meaning of software.
 
 [^2]: There is also the personal factor and visual that comes into designing UI that is very akin to graphic design, in which branding is hard to automate with AI as branding requires constant updating with the cultural fabric. To have communicative branding that expresses the meaning of the software is another exhibition of attention. 
 

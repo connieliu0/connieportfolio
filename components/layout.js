@@ -18,7 +18,7 @@ export default function Layout({ children, home }, props) {
           <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="Connie Liu's Portfolio" />
         </Head>
-        <main>{children}</main>
+        <main className={utilStyles.noClickImage}>{children}</main>
       </div>
     </MDXProvider>
   );
