@@ -66,21 +66,22 @@ Additionally, showing the user how to understand the “manual way” provides i
 
 One problem with prior complex tools is that a specific task would be buried behind several dropdowns.[6](https://corny.substack.com/p/vibe-coding-limits-a-creators-potential#footnote-6-163034537) Many companies have experimented with AI not to replace the current UI, but rather as a guide to show how to use the AI. At Ramp, the [AI agent clicks through the UI](https://x.com/tryramp/status/1792659194996281478), while for Stitch, a new node-based visual programming prototyping tool similar to Origami - [AI is used to create the abstracted primitive building block](https://stitchdesign.app/)s (video below).
 
-What if we leveraged this unique ability of AI to tailor the visual programming abstraction layers to the user? As a result, the user will learn gradually how to iterate without the use of AI for high frequency iterative tasks (changing the visual CSS, the layout etc).
+<TwitterCard url = "https://twitter.com/adammenges/status/1919406032281092118"/>
 
+What if we leveraged this unique ability of AI to tailor the visual programming abstraction layers to the user? As a result, the user will learn gradually how to iterate without the use of AI for high frequency iterative tasks (changing the visual CSS, the layout etc).
+![image.png](research/ladder.gif)
 Below I will describe the iteration interactions in relation to the **structural** and **visual** cycles.
 
 ### Iterating functionally
 
 When users first prompt the AI, they usually don’t write out all the functions that make up a program. Without the detail exposed, it can be hard for people to grasp hidden decisions AI has made behind the scenes. What if we could expose each layer and help users narrow in on functions they’re interested in iterating in? That way, functional changes are more pointed and incentivized to take into account the existing system.
-
+![image.png](research/functional.gif)
 The prototype above is for a simple javascript page, and there is much more to explore in terms of how to visualizing state-based and component-based systems.
 
 ### Iterating visually
 
 There are already many good intermediaries between pure CSS and the output - Chrome Devtools inspector allows you to modify properties to see changes lives and Figma’s primitives are mapped exactly to CSS (making it easy to create accurate code snippets without any AI). Although there could be many layers of abstraction for the different variables (and certainly better ways to interact with them), again we are illustrating the relation between the code and the output. This is very similar to the principles in Bret Victor’s Learnable programming (link [here](https://worrydream.com/LearnableProgramming/)).
-
-* * *
+![image.png](research/visual.gif)
 
 ### Implications for the future
 
