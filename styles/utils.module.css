@@ -173,6 +173,8 @@ main h2:not(.row h2),
 main h3:not(.row h3),
 main h4:not(.row h4),
 main h5:not(.row h5),
+main ol:not(.row ol),
+main ul:not(.row ul),
 body h6:not(.row h6) {
   max-width: 600px;
   margin-left: auto;

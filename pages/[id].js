@@ -43,7 +43,7 @@ export default function Post({ source, frontMatter }) {
       <div className={"animate-text delay-2"}>
       <Layout>
         <MDXWrapper>
-          <MDXRemote {...source} components={components} />
+      <MDXRemote {...source} components={components} />
         </MDXWrapper>
       </Layout>
       <div className={utilStyles.galleryrow} style={{maxWidth: '600px', justifyContent: 'space-between', marginLeft: 'auto', marginRight: 'auto'}}>
