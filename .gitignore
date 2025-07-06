@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Protected content
+posts/case-studies/customformula.mdx
+
 # dependencies
 /node_modules
 /.pnp
@@ -17,6 +20,7 @@
 
 # misc
 .DS_Store
+*.pem
 
 # debug
 npm-debug.log*
@@ -28,3 +32,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Vercel
+.vercel

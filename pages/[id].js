@@ -26,7 +26,7 @@ export default function Post({ source, frontMatter, isLoggedIn }) {
   const [authenticated, setAuthenticated] = React.useState(isLoggedIn)
   
   // Only show password prompt for the protected page
-  if (frontMatter.id === 'customform' && !authenticated) {
+  if (frontMatter.id === 'customformula' && !authenticated) {
     return (
       <div className="animate-text delay-1" style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
