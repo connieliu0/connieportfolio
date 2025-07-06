@@ -1,0 +1,185 @@
+export const meta = {
+  title: "AI Custom Formula",
+  date: "2024-03-28",
+  type: "",
+  pic: "/images/startup.png",
+  next: "",
+  time: "Present",
+  header: "",
+  role: "Protected Content",
+  context: "Atlassian Analytics"
+}
+
+**Team:** 3 engineers, 1 PM, 1 content designer **Timeline:** Design - 2.5 months, Implementation - 1 month
+
+Note: This is a high-level overview of a project; many interaction design iterations have been omitted for brevity.
+
+## **Problem**
+
+Atlassian Analytics is an add on feature for enterprise organizations to understand trends in their Atlassian data through dashboards. Within Analytics there are two kinds of users - **viewers** and **creators** (with varying levels of expertise) of dashboards.
+
+One of the main actions in creating dashboards is querying data and putting it into the right table format. However creating dashboards has some problems:
+
+1. Not all functions for **transforming the data can be abstracted into the UI controls** - some have to be written using a **custom formula** that uses **SQLite**, a technical language dashboard creators may not be familiar with.
+2. Writing **custom formula functions** might be difficult or complex to write and would not be solvable with a Google Search.
+
+![Custom formula listed amongst the other prebuilt data query actions](AtlassianAI/image.png)
+
+Custom formula listed amongst the other prebuilt data query actions
+
+![Every chart has a lot of custom formula SQLite functions](AtlassianAI/image%201.png)
+
+Every chart has a lot of custom formula SQLite functions
+
+## **How might we make it easier to create custom formulas such that dashboards can be made faster and easier?**
+
+**Hypothesis:**
+
+- **IF** we make it easier for creators who are less technical to create data queries for dashboards
+- **THEN** creating new charts will be easier and require less assistance, making it faster to create dashboards users need
+- **RESULTING IN** increased creation of dashboards and overall improvement in engagement for Atlassian analytics.
+
+## **Solution**
+
+One of the key KR’s for Atlassian Analytics was to increase MAU. One such way would be to increasing ease of use, with the advent of AI the product team brainstormed an idea to harness the power of generative AI to create a way for users to integrate natural language into SQLite.
+
+//INSERT VIDEO
+
+## **How much AI should be incorporated?**
+
+Before I landed on the solution of focusing AI on custom formulas, the triad proposed several options to use AI to create further ease of action such as NL for all actions (row and formula column) and NL for formula column steps.
+
+//VIDEO2 and 3
+
+While applying AI onto everything seemed like an easy way to increase ease of use, I also felt strongly that the pre-existing clear user experiences would provide the same ease of use. To confirm whether I should build this, I conducted interviews with four internal users to understand their current difficulty with understanding and applying row actions and formula columns. I found out both were not a huge problem, thus solidifying applying AI to simplify **custom formulas** was the most pressing problem.
+
+## **Research**
+
+**Learning from Other Products**
+
+I interviewed product owners of two similar initiatives: turning natural language into JQL (Jira Query Language) and natural language into SQL (in Analytics) to learn more about possible pitfalls -
+
+1. NL → SQL had **high usage despite limited promotion** - showing users in Analytics were already aware and trusted natural language to aid them in dashboard creation.
+2. NL → JQL struggled to retain users **because of low accuracy** leading to **high dropoff**. It would be important to test for common prompts to avoid this happening.
+
+**Testing AI Prompts**
+
+I spoke with the lead designer on Atlassian Analytics who designed a similar generative AI feature (chart insights, which used AI to describe chart data) about how to write a good system prompt that would make sure the AI would write exactly the SQLite formula and error out correctly. The **prompt** used is below:
+
+> You are a bot in the analytics SAAS products transforming a human ask to the SQLite function. After the user types in their desired query, your response is shown in the form of an SQLite function with no other text. Please only show the text after SELECT and before FROM. Only show the text before AS. All columns referenced must be in quotation marks.
+> 
+
+I then tested several prompts with the prompt I designed by talking to our support engineers about what common asks they got from users. I also tested with our internal users using an **Origami prototype connected to an OpenAI endpoint** to see what prompts they would naturally do. At the end, I was confident I could achieve high accuracy within our constraints and could proceed with the design.
+
+![image.png](AtlassianAI/image%202.png)
+
+## **Design**
+
+In the initial design, I tried to align with other AI patterns in Atlassian, namely in Jira and Confluence.
+
+![image.png](AtlassianAI/image%203.png)
+
+I tried to stick with initial generative AI experiences, as seen in Confluence, which allowed giving the user the option at **any point in the journey to ask AI** instead of doing a normal save.
+
+//VIDEO 4 
+
+I quickly released this version to internal production for testing with some internal users. Through testing I learned of user behavior that would warrant both quick fixes and longer exploration. **I was given one sprint (2 weeks) to design the next and final iteration of this feature.**
+
+### The quick wins: Auto-compilation
+
+I learned that users often needed to see the prompt's result to evaluate its success and could not tell from solely just the generated code. This led to the design evolving to **automatically compile** instead of **showing the code before compilation.**
+
+//VIDEO 5 and 6
+
+### The longer road: When to apply AI?
+
+While I initially thought giving users more choice (not auto-applying AI on enter, a persistent way to add AI at any point in the typing journey) would lead to better outcomes, I learned from user testing that:
+
+- Users expected AI to be **automatically applied** when they pressed enter.
+- Users wanted a way to look at their **previous prompt** in case whatever they generated didn’t work.
+
+Another new factor also arose—one of our engineers discovered AI can **auto-correct syntax errors** and wanted this to be considered in the designs.
+
+### How might we allow switching between AI and the Normal Experience?
+
+There was a major decision regarding whether we would automatically detect the user’s intent (a pattern that appeared in Confluence / Google Search) when they pressed enter or have the user declare their intent by switching to an “AI mode.”
+
+I decided not to go with an auto apply for the following reasons:
+
+- While it would be easy to detect if users were asking a question, it would be harder to detect if users wanted their code’s syntax error to be checked since it wasn’t a known feature. This was a much higher engineering lift.
+- The likelihood users would want to switch to AI mode halfway through writing their query was low.
+
+## **Figuring out how to design “AI mode”**
+
+There were three main steps to the creation - 1. **initial create (AI Mode), 2. evaluate** and **3. edit.** Initially I separated out the flow to explore some ideas at each step.
+
+But then I realized the flow for turning on AI mode and evaluating the prompt were linked. To determine which overall flow to go with, I had to understand how different users would switch between standard and AI throughout their journey.
+
+![image.png](AtlassianAI/image%204.png)
+
+I had to understand how to accommodate for the **All AI** and **50% AI** use case. To do so I mapped out the possibilities into two core interaction flows and designs which I sparred with my lead designer and triad.
+
+![image.png](AtlassianAI/image%205.png)
+
+I decided to go with **option 2** because users did not often want to apply AI to the generated SQLite (often they wouldn’t know how to). As a result, it was easier to figure out how to display the AI vs. the SQLite. Instead of designing for every edge case, one should figure out which edge cases are probable to occur.
+
+**More internal user testing**
+
+![image.png](AtlassianAI/image%206.png)
+
+After exploring a variety of variations for the switch between AI mode and standard, I settled on two variations to test.
+
+VIDEO 7 and 8
+
+I user-tested a mix of internal users and Atlassians who had never used the platform before to ensure the feature was **effortlessly usable** without too many how-to guides.
+
+I A/B tested two interaction designs, switching the one I did first and paying attention to whether users could implicitly understand how to get to the edit prompt state and their reactions to autogeneration.
+
+After tests, I found that users understood option 2 the best, and could imply how to get to the original SQLite from the prompt when asked to edit. After a few tweaks to copy and making sure the design aligned with pre-existing toggle patterns in the product (it wasn’t an official design pattern), I went with this design for beta launch!
+
+### Edge States
+
+Beyond the main design, I made sure to design for onboarding and feedback states employing previous designs used for gen AI features in Analytics. I also collaborated with engineers to account for error states.
+
+![image.png](AtlassianAI/image%207.png)
+
+### Beta Results and Analytics
+
+With engineer’s help I designed an analytics dashboard (using our own platform) and evaluated our beta results against existing experiences. First off, it was functionally very useful.
+
+![image.png](AtlassianAI/image%208.png)
+
+Compared to NL > SQL and NL > JQL, this had both higher accuracy and ratio of satisfied user iteractions.
+
+![image.png](AtlassianAI/image%209.png)
+
+As a result, this led to high usage rates that’s increasing over time. Combined with stable AI change rates, we know that the AI Saved by Day is actually increasing.
+
+![image.png](AtlassianAI/image%2010.png)
+
+From beta testing I made two improvements to try and increase usage and satisfaction.
+
+- I made the toggle sticky - meaning if the user switched to AI mode it would remember that between dashboard and settings. You can see after September 11 usage increased, although it’s unclear if it can be directly attributed.
+- Through our few responses in the feedback collector, I saw that 1 or 2 users thought AI could generate **row actions,** I made sure to write in our **onboarding, community notes, transparency notes,** and **support documentation** that this was not possible to mitigate future misunderstanding.
+
+For GA launch, I prepared an onboarding modal, the design of which aligned with our other onboarding features for genAI in product.
+
+![image.png](AtlassianAI/image%2011.png)
+
+I also initially advocated for an additional modal advocating for the admin to turn on AI. However, I decided against it because we’ve had other genAI features, so org admins are already aware of this feature. If the org admins decide not to turn it on it’s 95% of the time because of security reasons which this feature wouldn’t change.
+
+## **Results and Conclusion**
+
+This feature launched to GA on September 20th with the popup onboarding modal. I could not be more proud of the team for building this feature and learning how to break down a complex interaction design problem into digestible components to present it efficiently at sparring!
+
+Overall it's evident there is an increased usage of custom formulas to make dashboards, meaning AI has made it easier to generate them!
+
+![image.png](AtlassianAI/image%2012.png)
+
+## **Future explorations and AI integration**
+
+Beyond chart creation, I also did full-fledged user research study on whether we could use AI to summarize whole dashboards, showing users would love easier and quicker ways to interpret dashboards and get to action items for monitoring.
+
+![image.png](AtlassianAI/image%2013.png)
+
+However, due to engineering limitations in getting drill-down data (the basis for the way for a lot of dashboard information), this project was shelved. In addition, the OKR was changed to increasing MAU (users viewing or creating) on AA dashboards for the next quarter more directly instead of usability and efficiency improvements, further deprioritizing future AI projects.
