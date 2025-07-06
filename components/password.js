@@ -37,7 +37,7 @@ const PasswordPromptDialog = ({ onSubmit }) => {
   return (
     <div className="password-prompt-dialog">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="password">Password:</label>
+        <label htmlFor="password">Password: </label>
         <input
           type="password"
           id="password"
@@ -45,6 +45,7 @@ const PasswordPromptDialog = ({ onSubmit }) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        <br/>
         <button type="submit" disabled={loading}>
           {loading ? 'Loading...' : 'Submit'}
         </button>

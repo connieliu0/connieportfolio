@@ -14,17 +14,29 @@ import MDXWrapper from '../components/mdx-wrapper.js'
 import MDXImage from '../components/mdx-image.js'
 import Divider from '../components/divider.js'
 import remarkGfm from 'remark-gfm'
+import { parseCookies } from 'nookies'
+import React from 'react'
+import PasswordPromptDialog from '../components/password.js'
 // import { parseCookies } from 'nookies'
 // import React from 'react'
 // import PasswordPromptDialog from '../components/password.js'
-const components = { Section, Row, TwitterCard, Caption, wrapper: MDXWrapper, img: MDXImage, hr: Divider }
+const components = { Section, Row, TwitterCard, Caption, wrapper: MDXWrapper, img: MDXImage, hr: Divider, PasswordPromptDialog }
 
-export default function Post({ source, frontMatter }) {
-  // Comment out authentication check
-  // const [authenticated, setAuthenticated] = React.useState(isLoggedIn)
-  // if (!authenticated) {
-  //   return <PasswordPromptDialog onSubmit={() => setAuthenticated(true)} />
-  // }
+export default function Post({ source, frontMatter, isLoggedIn }) {
+  const [authenticated, setAuthenticated] = React.useState(isLoggedIn)
+  
+  // Only show password prompt for the protected page
+  if (frontMatter.id === 'customform' && !authenticated) {
+    return (
+      <div className="animate-text delay-1" style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <h1 style={{ fontFamily: 'Lora, serif', marginBottom: '1rem' }}>Protected Content</h1>
+          <p style={{ color: '#858585', fontFamily: 'DM Sans, sans-serif' }}>This content requires a password to view.</p>
+        </div>
+        <PasswordPromptDialog onSubmit={() => setAuthenticated(true)} />
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -63,6 +75,7 @@ export default function Post({ source, frontMatter }) {
 
 export async function getStaticProps({ params }) {
   const { id } = params
+  const cookies = parseCookies()
 
   // Try to load from case-studies first, then research
   let postData
@@ -90,7 +103,7 @@ export async function getStaticProps({ params }) {
     props: { 
       source: mdxSource, 
       frontMatter: postData,
-      // isLoggedIn: false // Removed isLoggedIn prop
+      isLoggedIn: !!cookies.auth_cookie
     } 
   }
 }

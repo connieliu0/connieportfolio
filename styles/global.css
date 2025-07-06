@@ -18,6 +18,44 @@
 .delay-1 { animation-delay: 0.1s; }
 .delay-2 { animation-delay: 0.3s; }
 
+/* Password Form Styles */
+.password-prompt-dialog {
+  max-width: 300px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.password-prompt-dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.password-prompt-dialog label {
+  font-size: 1.2em;
+  color: #303030;
+}
+
+.password-prompt-dialog input {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.password-prompt-dialog input:focus {
+  outline: none;
+  border-color: #5F957B;
+}
+
+.password-prompt-dialog .error {
+  color: #d32f2f;
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+}
+
 blockquote{
   font-size: 1.5em;
   color: #858585
@@ -110,7 +148,8 @@ button {
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-  font-weight:600
+  font-weight:600;
+  font-family: 'DM Sans', sans-serif;
 }
 .figma{
   max-width:1100px;
