@@ -14,7 +14,7 @@ export const meta = {
 
 Note: This is a high-level overview of a project; many interaction design iterations have been omitted for brevity.
 
-## **Problem**
+## Problem
 
 Atlassian Analytics is an add on feature for enterprise organizations to understand trends in their Atlassian data through dashboards. Within Analytics there are two kinds of users - **viewers** and **creators** (with varying levels of expertise) of dashboards.
 
@@ -29,31 +29,31 @@ One of the main actions in creating dashboards is querying data and putting it i
 ![Every chart has a lot of custom formula SQLite functions](AtlassianAI/image%201.png)
 <Caption>Every chart has a lot of custom formula SQLite functions</Caption>
 
-## **How might we make it easier to create custom formulas such that dashboards can be made faster and easier?**
+### **How might we make it easier to create custom formulas such that dashboards can be made faster and easier?**
 
-**Hypothesis:**
+Hypothesis:
 
 - **IF** we make it easier for creators who are less technical to create data queries for dashboards
 - **THEN** creating new charts will be easier and require less assistance, making it faster to create dashboards users need
 - **RESULTING IN** increased creation of dashboards and overall improvement in engagement for Atlassian analytics.
 
-## **Solution**
+## Solution
 
 One of the key KR's for Atlassian Analytics was to increase MAU. One such way would be to increasing ease of use, with the advent of AI the product team brainstormed an idea to harness the power of generative AI to create a way for users to integrate natural language into SQLite.
 
 ![The final solution](AtlassianAI/trimmed.gif)
 
-## **How much AI should be incorporated?**
+### How much AI should be incorporated?
 
 Before I landed on the solution of focusing AI on custom formulas, the triad proposed several options to use AI to create further ease of action such as NL for all actions (row and formula column) and NL for formula column steps.
 
-# AI-Generated Custom Formulas
+## AI-Generated Custom Formulas
 
 ![Competitors](AtlassianAI/competitors.png)
 
 While applying AI onto everything seemed like an easy way to increase ease of use, I also felt strongly that the pre-existing clear user experiences would provide the same ease of use. To confirm whether I should build this, I conducted interviews with four internal users to understand their current difficulty with understanding and applying row actions and formula columns. I found out both were not a huge problem, thus solidifying applying AI to simplify **custom formulas** was the most pressing problem.
 
-## **Research**
+## Research
 
 **Learning from Other Products**
 
@@ -66,14 +66,13 @@ I interviewed product owners of two similar initiatives: turning natural languag
 
 I spoke with the lead designer on Atlassian Analytics who designed a similar generative AI feature (chart insights, which used AI to describe chart data) about how to write a good system prompt that would make sure the AI would write exactly the SQLite formula and error out correctly. The **prompt** used is below:
 
-> You are a bot in the analytics SAAS products transforming a human ask to the SQLite function. After the user types in their desired query, your response is shown in the form of an SQLite function with no other text. Please only show the text after SELECT and before FROM. Only show the text before AS. All columns referenced must be in quotation marks.
-> 
+"You are a bot in the analytics SAAS products transforming a human ask to the SQLite function. After the user types in their desired query, your response is shown in the form of an SQLite function with no other text. Please only show the text after SELECT and before FROM. Only show the text before AS. All columns referenced must be in quotation marks."
 
 I then tested several prompts with the prompt I designed by talking to our support engineers about what common asks they got from users. I also tested with our internal users using an **Origami prototype connected to an OpenAI endpoint** to see what prompts they would naturally do. At the end, I was confident I could achieve high accuracy within our constraints and could proceed with the design.
 
 ![image.png](AtlassianAI/image%202.png)
 
-## **Design**
+## Design
 
 In the initial design, I tried to align with other AI patterns in Atlassian, namely in Jira and Confluence.
 
@@ -109,7 +108,7 @@ I decided not to go with an auto apply for the following reasons:
 - While it would be easy to detect if users were asking a question, it would be harder to detect if users wanted their code's syntax error to be checked since it wasn't a known feature. This was a much higher engineering lift.
 - The likelihood users would want to switch to AI mode halfway through writing their query was low.
 
-## **Figuring out how to design "AI mode"**
+## Figuring out how to design "AI mode"
 
 There were three main steps to the creation - 1. **initial create (AI Mode), 2. evaluate** and **3. edit.** Initially I separated out the flow to explore some ideas at each step.
 
@@ -169,7 +168,7 @@ For GA launch, I prepared an onboarding modal, the design of which aligned with 
 
 I also initially advocated for an additional modal advocating for the admin to turn on AI. However, I decided against it because we've had other genAI features, so org admins are already aware of this feature. If the org admins decide not to turn it on it's 95% of the time because of security reasons which this feature wouldn't change.
 
-## **Results and Conclusion**
+## Results and Conclusion
 
 This feature launched to GA on September 20th with the popup onboarding modal. I could not be more proud of the team for building this feature and learning how to break down a complex interaction design problem into digestible components to present it efficiently at sparring!
 
@@ -177,7 +176,7 @@ Overall it's evident there is an increased usage of custom formulas to make dash
 
 ![image.png](AtlassianAI/image%2012.png)
 
-## **Future explorations and AI integration**
+## Future explorations and AI integration
 
 Beyond chart creation, I also did full-fledged user research study on whether we could use AI to summarize whole dashboards, showing users would love easier and quicker ways to interpret dashboards and get to action items for monitoring.
 

@@ -1,6 +1,7 @@
 import data from "./api/resume.json";
 import Image from "next/image";
 import Head from "next/head";
+import Research from "../components/research";
 import Block from "../components/expblock.js";
 import ExpSmall from "../components/expsmall.js";
 import styles from "../components/layout.module.css";
@@ -36,18 +37,18 @@ export default function About() {
             </p>
             <p>
               I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (I made this website!). Currently, I'm on admin experiences and prior designed on <a href="https://www.atlassian.com/platform/analytics/what-is-atlassian-analytics">Atlassian Analytics</a>; previously I designed at Scale AI, Kleiner Perkins Fellows, NYTimes, BuzzFeed, and contributed to open source via Google Summer of Code. 
+              design, research, and code (like this website!). Currently, I'm designing at Atlassian; previously I was at Scale AI, Kleiner Perkins Fellows, NYT, BuzzFeed, and Google Summer of Code. 
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
-              public benefit and have published research to ACM CSCW and COMPASS. Currently I serve as Creative Director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
+              public benefit and have published ICT4D research to ACM CSCW. Currently I serve as Creative Director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
             </p>
             <p>
               Previously, I got a degree in Data, User Experience, and Computer Science at Cornell, where I
               founded the
               <a href="https://www.cornellh4i.org/"> Hack4Impact</a> design team and
-              an open access{" "}
-              <a href="https://bit.ly/CUxD">UX Design club</a>. Before that, I grew up in Pennsylvania and originally wanted to be an environmental scientist - a part of me is still tinkering about the  <a href="https://www.are.na/connie-liu-kg4ypfp7ry0/organic-web">organic web</a>.
+              {" "}
+              <a href="https://bit.ly/CUxD">Cornell UX Design club</a>. Before that, I grew up in Pennsylvania and originally wanted to be an environmental scientist - a part of me is still tinkering about the  <a href="https://www.are.na/connie-liu-kg4ypfp7ry0/organic-web">organic web</a>.
             </p>
             <p>
               Read more on my{" "}
@@ -76,6 +77,25 @@ export default function About() {
           </div>
         </div>
       </div> */}
+            <div className="animate-text delay-2">
+      <Section name="published research ↓ " />
+      <br/>
+      <div className={utilstyles.galleryrow}>
+       
+        <Research
+          name="“Fact-checks are for the Top 0.1%”: Examining Reach,
+          Awareness, and Relevance of Fact-Checking in Rural India"
+          subtitle="2022, Published in ACM CSCW"
+          link="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view"
+        />
+        <Research
+          name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
+          subtitle="2021, Published in ACM COMPASS"
+          link="https://drive.google.com/file/d/1WHGkG2l7mKBCkYRjdxcuEtkZRm5Z2Kwk/view"
+        />
+      </div>
+      <em>Note: Although I don't do academic HCI research anymore, I still enjoy <a href="https://social.connie.surf/" target="_blank">research as a leisure activity</a></em>
+      <br/>
       <Section name="a list of things I love ↓ " />
       <div className={utilstyles.galleryrow}>
         <div className={utilstyles.width275}>
@@ -96,6 +116,7 @@ export default function About() {
           </p>
         </div>
       </div>
-    </>
+      </div>
+          </>
   );
 }

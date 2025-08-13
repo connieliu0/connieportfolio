@@ -28,7 +28,7 @@ export default function Post({ source, frontMatter, isLoggedIn }) {
   // Only show password prompt for the protected page
   if (frontMatter.id === 'customformula' && !authenticated) {
     return (
-      <div className="animate-text delay-1" style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
+              <div className="animate-text delay-1" style={{ maxWidth: '820px', margin: '0 auto', padding: '2rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <h1 style={{ fontFamily: 'Lora, serif', marginBottom: '1rem' }}>Protected Content</h1>
           <p style={{ color: '#858585', fontFamily: 'DM Sans, sans-serif' }}>This content requires a password to view.</p>

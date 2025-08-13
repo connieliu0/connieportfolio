@@ -64,7 +64,7 @@ img{
   margin: 0 auto;
 }
 body {
-  max-width: 800px;
+  max-width: 820px;
   margin: auto;
   font-family: 'DM Sans', sans-serif;
   padding-left: 1rem;
@@ -80,6 +80,7 @@ em{
 h1{
   font-family: 'Lora', serif;
   font-size: 2em;
+  line-height: 1.2em;
 }
 h2{
   font-family: 'Lora', serif;
@@ -133,7 +134,7 @@ img {
 }
 
 main{
-  max-width: 800px;
+  max-width: 820px;
   margin: auto;
   line-height: 1.5em;
 }

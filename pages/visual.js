@@ -14,15 +14,12 @@ export default function Visual() {
       <div className={utilstyles.row}>
         <div class="animate-text delay-1">
           <h1>
-            In my free time I'm enamoured by illustrations, print graphics, and
-            non-linear narratives ⚘
+            Design is inherently intertwined with visual craft ⚘
           </h1>
-          <p>
-            {" "}
-              ✎ More visual links:{" "}
+          <p>In my free time, I'm enamoured by illustrations, print graphics, and non-linear narratives (hover to zoom). More visual links:{" "}
               <a href="https://instagram.com/conliuart" target="_blank">
                 Instagram
-              </a>{" "}
+              </a> and <a href="/reboot">Reboot case study</a> {" "}
           </p>
         </div>
         <Image 

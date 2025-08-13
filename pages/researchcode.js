@@ -60,21 +60,7 @@ export default function Researchcode({ allPostsData }) {
           {allPostsData.slice(0,2).map(({ id, title, type, date }) => (
             <Research name={title} subtitle={type} time={date} link={id} />
           ))}
-        </div>
-      <Section name="RESEARCH ON ICT4D" />
-      <div className={utilstyles.galleryrow}>
-        <Research
-          name="“Fact-checks are for the Top 0.1%”: Examining Reach,
-          Awareness, and Relevance of Fact-Checking in Rural India"
-          subtitle="2022, Published in ACM CSCW"
-          link="https://drive.google.com/file/d/1-M5135iIvryrAhIIVdbmFt6He5aLGpRe/view"
-        />
-        <Research
-          name="Improving the Gender Digital Divide in ICT: A Closer Look at Ghana, South Africa, and India"
-          subtitle="2021, Published in ACM COMPASS"
-          link="https://drive.google.com/file/d/1WHGkG2l7mKBCkYRjdxcuEtkZRm5Z2Kwk/view"
-        />
-      </div>
+        </div>    
       <Section name="CODE" />
       <div className={utilstyles.galleryrow}>
         <SmallCard

@@ -18,9 +18,8 @@ export default function App({
         </Link>
         <div className={styles.marginleft}>
           <div className={styles.lineem}>
-            <Link href="/">Design</Link>
-            <Link href="/researchcode">Research+Code</Link>
-            <Link href="/visual">Visual</Link>
+            <Link href="/">Design+Code</Link>
+            <Link href="/visual">Illos+Graphic</Link>
             <Link href="/about">About</Link>
           </div>
         </div>

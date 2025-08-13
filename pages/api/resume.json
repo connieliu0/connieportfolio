@@ -1,42 +1,42 @@
 {
   "Art": [
     {
-      "name": "p1.jpg",
-      "desc": "National Silver Medal"
-    },
-    {
-      "name": "p2.jpg",
-      "desc": "Top 2% of submissions"
-    },
-    {
-      "name": "p3.jpg",
-      "desc": "About the overwhelmingness of art"
+      "name": "dirt.png"
     },
     {
       "name": "searching.png"
     },
     {
-      "name": "burninghill.png"
+      "name": "hill2.png"
     },
     {
-      "name": "life.jpg"
-    },
-    {
-      "name": "rain.jpg"
+      "name": "reboot.jpg"
     },
     {
       "name": "poster.png"
     },
     {
-      "name": "hill2.png"
+      "name": "burninghill.png"
+    },
+    {
+      "name": "Stumbleupon.png"
+    },
+    {
+      "name": "comic.jpeg"
     },
     {
       "name": "wouldyou.png"
     },
-
     {
-      "name": "Stumbleupon.png"
+      "name": "tryagain.gif"
+    },
+    {
+      "name": "cover.jpeg"
+    },
+    {
+      "name": "p3.jpg"
     }
+    
   ],
   "Work": [
     {

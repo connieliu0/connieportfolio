@@ -6,12 +6,17 @@ import Section from "../components/section.js";
 import Card from "../components/card.js";
 import SmallCard from "../components/smallcard.js";
 import Image from "next/image";
-
+import utilstyles from "../styles/utils.module.css";
+import Research from "../components/research";
 export async function getStaticProps() {
   try {
-    const allPostsData = await getSortedPostsData('case');
+    const [researchData, allPostsData] = await Promise.all([
+      getSortedPostsData('research'),
+      getSortedPostsData('case'),
+    ]);
     return {
       props: {
+        researchData,
         allPostsData,
       },
     };
@@ -19,13 +24,14 @@ export async function getStaticProps() {
     console.error('Error in getStaticProps:', error);
     return {
       props: {
+        researchData: [],
         allPostsData: [],
       },
     };
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, researchData }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -35,7 +41,7 @@ export default function Home({ allPostsData }) {
       <div className="animate-text">
         <h1 className="animate-text delay-1">Connie is a product designer and crafter of tools ✿ </h1>
         <p className="animate-text delay-1">
-          currently designing at Atlassian ☆ previously at Scale AI, NYT,
+          Currently designing at Atlassian ☆ previously at Scale AI, NYT,
           BuzzFeed, and KP Fellows. She is perpetually on a quest of{" "}
           <a href="https://www.connie-liu.me/researchcode" target="_blank">
             curiousity
@@ -59,15 +65,23 @@ export default function Home({ allPostsData }) {
       <div className="animate-text delay-2">
         <Section name="FEATURED PROJECTS" />
         <div className={styles.galleryrow}>
-          {allPostsData.slice(0,4).map(({ id, title, pic, type, role }) => (
+          {allPostsData.slice(0,6).map(({ id, title, pic, type, role }) => (
             <Card pic={pic} title={title} link={id} type={type} role={role} />
           ))}
         </div>
         <br/>
         <br/>
+        <Section name="RESEARCH ON AI-FUTURES" />
+      <div className={utilstyles.galleryrow}>
+          {researchData.slice(0,2).map(({ id, title, type, date }) => (
+            <Research name={title} subtitle={type} time={date} link={id} />
+          ))}
+        </div>    
+        <br/>
+        <br/>
         <Section name="MORE PROJECTS" />
         <div className={styles.galleryrow}>
-          {allPostsData.slice(4).map(({ id, title, pic, type, role }) => (
+          {allPostsData.slice(6).map(({ id, title, pic, type, role }) => (
             <Card pic={pic} title={title} link={id} type={type} role={role} />
           ))}
         </div>
