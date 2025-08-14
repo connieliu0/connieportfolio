@@ -16,8 +16,6 @@ export const meta = {
 
 Link Dump is an ephemeral canvas I created over the course of weekends and nights between the spring and summer of 2025. I implemented abilities for users to paste links, files and import Are.na channels in which they, along with the canvas, would age with time.
 
-![linkdumpdemo2](linkdump/first.gif)
-
 ![linkdumpdemo2](linkdump/idle.gif)
 
 At the end of the time, the user would be given the choice to export it as a CSV to save it locally or save anew. Along with locally storing pasted files in the browser, I implemented a collaborative and cross-device board mode with Firebase with a shareable link. 
@@ -26,10 +24,26 @@ At the end of the time, the user would be given the choice to export it as a CSV
 
 Although I used Claude and Cursor to help me implement features, I designed the visual, brand, and interaction myself utilizing Figma and Framer.
 
-### Conceptual Underpinnings
+### Design details
+
+Designing and building a product myself is much different than just doing it in Figma. I ran into numerous issues, for example, because I am using an external package to create a zoomable canvas, there is a bug I'm still working through regarding the edit and select interactions for specific cards where the width resizes. Additionally, a feature I wanted to add was grouping, especially as it became difficult to sort a large number of cards spatially, however I ran into numerous issues trying to integrate that into my spaghetti code.
+
+![linkdumpdemo](linkdump/panning.gif)
+
+Another development was initially I relied on simple modals for onboarding, however upon testing realized that most users won't try and read through or input all of it.
+
+![linkdumpdemo](linkdump/first.gif)
+
+As a result, I changed my concept to include a new onboarding process that launched you directly into the experience.
+
+![linkdumpdemo](linkdump/newonboarding.gif)
+
+I allowed progressive disclosure of new features, such as changing the time or date and allowing users to convert their board into a collaborative one rather than having them choose which mode from the start.
+
+![linkdumpdemo](linkdump/convert.gif)
+
+I would say one of the biggest difficulties with this project was most of my time spent trying to debug and wrangle code than actually designing. As a result, I would become laser focused on testing functionality rather than exploring the design widely from the start.
+
+### Why did I build this? Conceptual underpinnings
 
 For more background on the inspiration and motivation behind this project: I saw principles in the cycles of creation and decay shared across both natural cycles and creative cycles, and saw an opportunity to join the two. As a serial digital hoarder, I save so much - screenshots in-between photos, thousand item are.na channels, a notes app of one-liners: I'm holding onto so much it falls through my hands. We collect as a form of noticing and remembering- perhaps it colors a perspective or recalls a feeling buried inside us. We collect with the intent of synthesizing and creating- an ever running to do list. But if we don't act, creativity will linger at the door and disappear.
-
-### Reflection
-
-Note: because I am using an external package to create a zoomable canvas, there is a bug I'm still working through regarding the edit and select interactions for specific cards where the width resizes.
