@@ -79,9 +79,7 @@ export default function About() {
       </div> */}
             <div className="animate-text delay-2">
       <Section name="published research ↓ " />
-      <br/>
       <div className={utilstyles.galleryrow}>
-       
         <Research
           name="“Fact-checks are for the Top 0.1%”: Examining Reach,
           Awareness, and Relevance of Fact-Checking in Rural India"
@@ -96,6 +94,8 @@ export default function About() {
       </div>
       <em>Note: Although I don't do academic HCI research anymore, I still enjoy <a href="https://social.connie.surf/" target="_blank">research as a leisure activity</a></em>
       <br/>
+      <br/>
+
       <Section name="a list of things I love ↓ " />
       <div className={utilstyles.galleryrow}>
         <div className={utilstyles.width275}>
