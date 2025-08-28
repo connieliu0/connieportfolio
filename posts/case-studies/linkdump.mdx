@@ -26,7 +26,7 @@ Although I used Claude and Cursor to help me implement features, I designed the 
 
 ### Design details
 
-Designing and building a product myself is much different than just doing it in Figma. I ran into numerous issues, for example, because I am using an external package to create a zoomable canvas, there is a bug I'm still working through regarding the edit and select interactions for specific cards where the width resizes. Additionally, a feature I wanted to add was grouping, especially as it became difficult to sort a large number of cards spatially, however I ran into numerous issues trying to integrate that into my spaghetti code.
+Designing and building a product myself is much different than just doing it in Figma. Because I am using an external package to create a zoomable canvas, it was difficult to add grouping or debug width resizing.
 
 ![linkdumpdemo](linkdump/panning.gif)
 
@@ -36,19 +36,32 @@ Another development was initially I relied on simple modals for onboarding, howe
 
 As a result, I changed my concept to include a new onboarding process that launched you directly into the experience.
 
-![linkdumpdemo](linkdump/newonboarding.gif)
+![linkdumpdemo](linkdump/onboarding.png)
 <Caption>Note: The next iteration of this will be fixing the visual design of the cards to convey more scannable information</Caption>
 
 I allowed progressive disclosure of new features, such as changing the time or date and allowing users to convert their board into a collaborative one rather than having them choose which mode from the start.
 
 ![linkdumpdemo](linkdump/convert.gif)
 
-I would say one of the biggest difficulties with this project was most of my time spent trying to debug and wrangle code than actually designing. As a result, I would become laser focused on testing functionality rather than exploring the design widely from the start.
+One of the biggest difficulties was I was always debugging, making my design process myopic at times.
 
 ### Why did I build this? Conceptual underpinnings
 
-For more background on the inspiration and motivation behind this project: I saw principles in the cycles of creation and decay shared across both natural cycles and creative cycles, and saw an opportunity to join the two. As a serial digital hoarder, I save so much - screenshots in-between photos, thousand item are.na channels, a notes app of one-liners: I'm holding onto so much it falls through my hands. We collect as a form of noticing and remembering- perhaps it colors a perspective or recalls a feeling buried inside us. We collect with the intent of synthesizing and creating- an ever running to do list. But if we don't act, creativity will linger at the door and disappear.
+After observing the principles of creation and decay shared across both natural and creative cycles, I saw an opportunity to join the two. As a serial digital hoarder, I save so much - screenshots in-between photos, thousand item are.na channels, a notes app of one-liners: I'm holding onto so much it falls through my hands. 
+
+We collect as a form of noticing and remembering- perhaps it colors a perspective or recalls a feeling buried inside us. We collect with the intent of synthesizing and creating- an ever running to do list. But if we don't act, creativity will linger at the door and disappear.
 
 ### Acknowledgements
 
 I'm grateful to have been able to spend some time at the [Strange Residency](https://thestrange.foundation/residencies-retreats) retreat to work on this as well as exhibit this at Bring Your Own Beamer at the Gray Area. The feedback I received at both has helped shape the future of the project.
+
+I was selected to give a talk about my process designing and vibe coding it solo at Chinatown.js in NYC, you can view my presentation below and watch it [here](https://drive.google.com/drive/u/0/folders/1aFemAvQ8Avq3DDSiXp5QnmnSmoONIru9). 
+
+<iframe 
+ style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} 
+ width="800" 
+ height="450"
+ src="https://embed.figma.com/proto/IkBSDHIleM3dVeXPGx2OPt/Presentation-for-Chinatown.js?page-id=0%3A1&node-id=1-3&p=f&viewport=454%2C63%2C0.07&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share" 
+ allowFullScreen
+/>
+![linkdumpdemo](linkdump/presentation.jpg)
