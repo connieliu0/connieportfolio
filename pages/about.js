@@ -92,6 +92,7 @@ export default function About() {
           link="https://drive.google.com/file/d/1WHGkG2l7mKBCkYRjdxcuEtkZRm5Z2Kwk/view"
         />
       </div>
+      <br/>
       <em>Note: Although I don't do academic HCI research anymore, I still enjoy <a href="https://social.connie.surf/" target="_blank">research as a leisure activity</a></em>
       <br/>
       <br/>
