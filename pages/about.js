@@ -41,7 +41,7 @@ export default function About() {
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
-              public benefit and have published ICT4D research to ACM CSCW. Currently I serve as Creative Director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
+              public benefit and have published ICT4D research to ACM CSCW. I've also creative directed for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
             </p>
             <p>
               Previously, I got a degree in Data, User Experience, and Computer Science at Cornell, where I
@@ -50,12 +50,12 @@ export default function About() {
               {" "}
               <a href="https://bit.ly/CUxD">Cornell UX Design club</a>. Before that, I grew up in Pennsylvania and originally wanted to be an environmental scientist - a part of me is still tinkering about the  <a href="https://www.are.na/connie-liu-kg4ypfp7ry0/organic-web">organic web</a>.
             </p>
-            <p>
+            {/* <p>
               Read more on my{" "}
               <a href="https://drive.google.com/file/d/1hFXY-SyhK6SbAYaHI12ibua6T0GTGITs/view?usp=sharing">
                 Resume
               </a>
-            </p>
+            </p> */}
           </div>
           </div>
 
