@@ -41,7 +41,7 @@ export default function About() {
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and
-              public benefit and have published ICT4D research to ACM CSCW. I've also creative directed for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
+              public benefit and have published ICT4D research to ACM CSCW. I'm also creative director for <a href="https://joinreboot.org/">Reboot</a>, a publication writing about techno-optimism.
             </p>
             <p>
               Previously, I got a degree in Data, User Experience, and Computer Science at Cornell, where I
