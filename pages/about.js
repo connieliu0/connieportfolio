@@ -36,8 +36,8 @@ export default function About() {
               </em>
             </p>
             <p>
-              I love 0 to 1 design, as it's where I can leverage my skillset in
-              design, research, and code (like this website!). Currently, I'm designing at Atlassian; previously I was at Scale AI, Kleiner Perkins Fellows, NYT, BuzzFeed, and Google Summer of Code. 
+              I love 0 to 1 design - it's where I can leverage my skills in
+              design, research, and code (like this website!). Currently, I'm designing at Webflow; previously I was at Atlassian, Scale AI, KP Fellows, NYT, BuzzFeed, and Google Summer of Code. 
               </p>
             <p>
               I'm deeply interested in how tech intersects with creativity and

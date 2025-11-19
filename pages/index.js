@@ -41,7 +41,7 @@ export default function Home({ allPostsData, researchData }) {
       <div className="animate-text">
         <h1 className="animate-text delay-1">Connie is a product designer and crafter of tools ✿ </h1>
         <p className="animate-text delay-1">
-          Currently designing at Atlassian ☆ previously at Scale AI, NYT,
+          Currently at Webflow ✧ previously at Atlassian, Scale AI, NYT,
           BuzzFeed, and KP Fellows. She is perpetually on a quest of{" "}
           <a href="https://www.connie-liu.me/researchcode" target="_blank">
             curiousity
@@ -65,7 +65,7 @@ export default function Home({ allPostsData, researchData }) {
       <div className="animate-text delay-2">
         <Section name="FEATURED PROJECTS" />
         <div className={styles.galleryrow}>
-          {allPostsData.slice(0,5).map(({ id, title, pic, type, role }) => (
+          {allPostsData.slice(0,6).map(({ id, title, pic, type, role }) => (
             <Card pic={pic} title={title} link={id} type={type} role={role} />
           ))}
         </div>
